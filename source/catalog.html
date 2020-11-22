@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -26,7 +27,7 @@
         </li>
       </ul>
     </nav>
-    <a class="page-header__logo logo">
+    <a class="page-header__logo logo" href="index.html">
       <img src="https://via.placeholder.com/100x85" alt="city of sedona" width="100" height="85">
     </a>
   </header>
@@ -58,7 +59,9 @@
             <h3 class="card-gallery__title">Не родные просторы</h3>
             <p class="card-gallery__autor">Автор фото: Борис</p>
           </div>
-          <div class="card-gallery__like">1350</div>
+          <div class="card-gallery__like">
+            <button class="card-gallery__like-button" type="button">1350</button>
+          </div>
         </figcaption>
       </figure>
 
@@ -72,7 +75,9 @@
             <h3 class="card-gallery__title">Местная растительность</h3>
             <p class="card-gallery__autor">Автор фото: Сергей</p>
           </div>
-          <div class="card-gallery__like">143</div>
+          <div class="card-gallery__like">
+            <button class="card-gallery__like-button" type="button">143</button>
+          </div>
         </figcaption>
       </figure>
 
@@ -86,7 +91,9 @@
             <h3 class="card-gallery__title">Дорога на север</h3>
             <p class="card-gallery__autor">Автор фото: Петр</p>
           </div>
-          <div class="card-gallery__like">96</div>
+          <div class="card-gallery__like">
+            <button class="card-gallery__like-button" type="button">96</button>
+          </div>
         </figcaption>
       </figure>
 
@@ -100,33 +107,34 @@
             <h3 class="card-gallery__title">Мост Дьявола</h3>
             <p class="card-gallery__autor">Автор фото: Антон</p>
           </div>
-          <div class="card-gallery__like">254</div>
+          <div class="card-gallery__like">
+            <button class="card-gallery__like-button" type="button">254</button>
+          </div>
         </figcaption>
       </figure>
     </section>
 
-    <section class="text-info">
-      <h2 class="text-info__title">Все еще сомневаетесь?</h2>
-      <p class="text-info__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
-        очередной раз!</p>
-    </section>
-
     <section class="video-presentation">
-      <h3 class="visually-hidden">Видеопрезентация города</h3>
+      <div class="video-presentation__info text-info">
+        <h2 class="text-info__title">Все еще сомневаетесь?</h2>
+        <p class="text-info__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
+      </div>
 
-        <div class="video-presentation__item video">
-          <div class="video__player">
-            <video class="video__video-frame" poster="https://via.placeholder.com/320x200" width="320" height="200"></video>
-          </div>
-          <div class="video__controls">
-            <button class="video__button video__button--replay"></button>
-            <div class="video__volume-bar"></div>
-            <div class="video__button-group">
-              <button class="video__button video__button--subtitles"></button>
-              <button class="video__button video__button--fullscreen"></button>
-            </div>
+      <div class="video-presentation__item video">
+        <div class="video__player">
+          <video class="video__video-frame" poster="https://via.placeholder.com/320x200" width="320"
+            height="200"></video>
+        </div>
+        <div class="video__controls">
+          <button class="video__button video__button--replay"></button>
+          <div class="video__volume-bar"></div>
+          <div class="video__button-group">
+            <button class="video__button video__button--subtitles"></button>
+            <button class="video__button video__button--fullscreen"></button>
           </div>
         </div>
+      </div>
     </section>
   </main>
 

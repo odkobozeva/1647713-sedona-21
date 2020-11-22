@@ -1,0 +1,35 @@
+.search-hotel__wrapper {
+  padding: 30px 20px 50px;
+  text-align: center;
+}
+
+.search-hotel__title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.24;
+}
+
+.search-hotel__description {
+  line-height: 1.71;
+  color: $secondary-text;
+}
+
+.search-hotel__button {
+  padding: 14px 32px;
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.24;
+
+  color: $light-text;
+  background-color: $button-background;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:active {
+    color: $button-text-active;
+    background-color: $button-background-active;
+  }
+}

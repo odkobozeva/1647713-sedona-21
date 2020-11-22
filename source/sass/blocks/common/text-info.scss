@@ -1,0 +1,15 @@
+.text-info {
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.text-info__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.44;
+}
+
+.text-info__description {
+  line-height: 1.86;
+  color: $secondary-text;
+}

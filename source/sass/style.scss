@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+// Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+// Common
+@import "blocks/common/page.scss";
+@import "blocks/common/page-header.scss";
+@import "blocks/common/main-nav.scss";
+@import "blocks/common/site-list.scss";
+@import "blocks/common/hero.scss";
+@import "blocks/common/text-info.scss";
+@import "blocks/common/button.scss";
+@import "blocks/common/page-footer.scss";
+@import "blocks/common/socials-list.scss";
+@import "blocks/common/copyright.scss";
+
+// Index
+@import "blocks/index/feature-banner.scss";
+@import "blocks/index/feature-item.scss";
+@import "blocks/index/advantages.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/search-hotel.scss";
