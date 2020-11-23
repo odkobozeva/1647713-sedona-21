@@ -1,0 +1,28 @@
+.site-list__item {
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  &:hover {
+    color: $menu-text-hover;
+    background-color: $menu-background-hover;
+  }
+
+  &:active {
+    color: $menu-text-active;
+    background-color: $menu-background-active;
+  }
+
+  &--active {
+    color: $menu-text-active;
+    background-color: $menu-background-active;
+  }
+
+  &--active:hover {
+    color: $menu-text-active;
+    background-color: $menu-background-active;
+  }
+}
+
+.site-list__link {
+  display: block;
+}
