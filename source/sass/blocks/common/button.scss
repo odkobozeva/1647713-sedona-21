@@ -1,7 +1,22 @@
 .button {
-  padding: 0;
+  width: 100%;
+  padding: 14px 32px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.24;
   font-family: inherit;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $button-background;
   border: none;
-  background-color: transparent;
   cursor: pointer;
+
+  &:hover {
+    background-color: $button-background-hover;
+  }
+
+  &:active {
+    color: $button-text-active;
+    background-color: $button-background-active;
+  }
 }
