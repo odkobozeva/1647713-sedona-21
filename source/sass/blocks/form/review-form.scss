@@ -1,0 +1,106 @@
+.review-form__fieldset {
+  margin: 0;
+  padding: 13px 20px;
+  border: none;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $decoration-line;
+  }
+
+  &--vertical .field {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &--vertical .field__label {
+    margin-right: 15px;
+  }
+
+  &--horisontal .field__label {
+    margin-left: 22px;
+  }
+
+  &--checkbox .field {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 26px;
+  }
+
+  &--checkbox .field__helper {
+    padding: 10px 0;
+  }
+
+  &--checkbox .field__helper::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-color: $input-background;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &--checkbox .field__input:checked + .field__helper::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    bottom: 0;
+    width: 20px;
+    height: 12px;
+    margin: auto;
+    border-left: 3px solid $input-checked;
+    border-bottom: 3px solid $input-checked;
+    transform: rotate(-45deg);
+  }
+
+  &--radiobutton .field {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 14px;
+  }
+
+  &--radiobutton .field__helper {
+    padding: 12px 0;
+  }
+
+  &--radiobutton .field__helper::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-color: $input-background;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &--radiobutton .field__input:checked + .field__helper::before {
+    background-color: $input-checked;
+    border: 18px solid $input-background;
+  }
+
+  &--radiobutton .field__input:checked + .field__helper:hover::before {
+    border: 18px solid $input-hover;
+  }
+}
+
+.review-form__legend {
+  padding: 20px 0 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.44;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.review-form__data-processing {
+  padding: 35px 20px;
+}

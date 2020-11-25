@@ -16,8 +16,17 @@
 @import "blocks/common/copyright.scss";
 
 // Index
+@import "blocks/index/feature-info.scss";
 @import "blocks/index/feature-banner.scss";
 @import "blocks/index/feature-item.scss";
 @import "blocks/index/advantages.scss";
 @import "blocks/index/features.scss";
 @import "blocks/index/search-hotel.scss";
+
+// Form
+@import "blocks/form/review.scss";
+@import "blocks/form/review-form.scss";
+@import "blocks/form/field.scss";
+
+// Visually-hidden
+@import "global/visually-hidden.scss";

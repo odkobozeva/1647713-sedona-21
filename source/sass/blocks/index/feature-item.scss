@@ -1,6 +1,7 @@
 .feature-item {
   padding: 30px 15px;
   text-align: center;
+  text-transform: uppercase;
 
   &--highlight {
     color: $light-text;

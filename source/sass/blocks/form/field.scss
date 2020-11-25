@@ -1,0 +1,47 @@
+.field {
+  align-items: center;
+}
+
+.field__group {
+  margin: 14px 0 23px;
+}
+
+.field__label {
+  color: $secondary-text;
+  text-transform: uppercase;
+}
+
+.field__input {
+  width: 100%;
+  padding: 13px 18px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.44;
+  background-color: $input-background;
+  border: 4px solid $input-background;
+
+  &:hover {
+    background-color: $input-hover;
+    border: 4px solid $input-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: transparent;
+    border: 4px solid $input-hover;
+    outline: none;
+  }
+}
+
+.field__helper {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.86;
+  text-transform: none;
+  cursor: pointer;
+
+  &:hover::before {
+    background-color: $input-hover;
+  }
+}

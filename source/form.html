@@ -40,14 +40,12 @@
         height="400">
     </section>
 
-    <section class="text-info">
-      <h2 class="text-info__title">Оставьте свой отзыв</h2>
-      <p class="text-info__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
-        вами достопримечательностях</p>
-    </section>
-
     <section class="review">
-      <h2 class="visually-hidden">Форма отзыва</h2>
+      <div class="review__info text-info">
+        <h2 class="text-info__title">Оставьте свой отзыв</h2>
+        <p class="text-info__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+          вами достопримечательностях</p>
+      </div>
 
       <form class="review-form form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review-form__fieldset review-form__fieldset--vertical">
@@ -76,7 +74,7 @@
             <label class="field__label" for="phone">Контактный телефон*:</label>
             <div class="field__group">
               <input class="field__input" type="tel" name="user_phone" id="phone" placeholder="Введите телефон"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
               <span class="field__icon field__icon--phone"></span>
             </div>
           </div>
@@ -92,68 +90,68 @@
 
         </fieldset>
 
-        <fieldset class="review-form__fieldset review-form__fieldset--vertical">
+        <fieldset class="review-form__fieldset review-form__fieldset--radiobutton">
           <legend class="review-form__legend">Ваше общее впечатление:</legend>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="radio" name="impression" value="positive" checked>
-              <span class="field__helper field__helper--radiobutton">Скорее положительное</span>
+              <span class="field__helper">Скорее положительное</span>
             </label>
           </div>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="radio" name="impression" value="negative">
-              <span class="field__helper field__helper--radiobutton">Скорее отрицательное</span>
+              <span class="field__helper">Скорее отрицательное</span>
             </label>
           </div>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="radio" name="impression" value="neutral">
-              <span class="field__helper field__helper--radiobutton">Затрудняюсь ответить</span>
+              <span class="field__helper">Затрудняюсь ответить</span>
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="review-form__fieldset review-form__fieldset--column">
+        <fieldset class="review-form__fieldset review-form__fieldset--checkbox">
           <legend class="review-form__legend">Посещенные достопримечательности:</legend>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="checkbox" name="devils_bridge" checked>
-              <span class="field__helper field__helper--checkbox">Мост Дьявола</span>
+              <span class="field__helper">Мост Дьявола</span>
             </label>
           </div>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="checkbox" name="mount_bell" checked>
-              <span class="field__helper field__helper--checkbox">Гора-Колокол</span>
+              <span class="field__helper">Гора-Колокол</span>
             </label>
           </div>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="checkbox" name="slide_park" checked>
-              <span class="field__helper field__helper--checkbox">Слайд-Парк</span>
+              <span class="field__helper">Слайд-парк</span>
             </label>
           </div>
 
           <div class="field">
             <label class="field__label">
               <input class="field__input visually-hidden" type="checkbox" name="red_rocks">
-              <span class="field__helper field__helper--checkbox">Красные скалы</span>
+              <span class="field__helper">Красные скалы</span>
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="review-form__fieldset review-form__fieldset--horisontal">
+        <fieldset class="review-form__fieldset review-form__fieldset--textarea">
           <legend class="review-form__legend">Опишите свои эмоции:</legend>
           <div class="field">
             <label class="visually-hidden" for="user-comment">Эмоции</label>
-            <textarea class="field__input" rows="6" id="user-comment" name="comment"
+            <textarea class="field__input" rows="5" id="user-comment" name="comment"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
         </fieldset>
@@ -184,8 +182,7 @@
     </ul>
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Разработано
-        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27"
-          height="34">
+        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </div>
   </footer>
