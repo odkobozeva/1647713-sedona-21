@@ -20,10 +20,15 @@
   background-color: $input-background;
   border: 4px solid $input-background;
 
+  &:hover {
+    background-color: $input-hover;
+    border: 4px solid $input-hover;
+  }
+
   &:active,
   &:focus {
     background-color: transparent;
-    border: 4px solid $input-active;
+    border: 4px solid $input-hover;
     outline: none;
   }
 }
@@ -35,4 +40,8 @@
   line-height: 1.86;
   text-transform: none;
   cursor: pointer;
+
+  &:hover::before {
+    background-color: $input-hover;
+  }
 }

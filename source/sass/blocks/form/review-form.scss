@@ -86,6 +86,10 @@
     background-color: $input-checked;
     border: 18px solid $input-background;
   }
+
+  &--radiobutton .field__input:checked + .field__helper:hover::before {
+    border: 18px solid $input-hover;
+  }
 }
 
 .review-form__legend {
