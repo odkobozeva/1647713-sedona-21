@@ -4,11 +4,12 @@ $secondary-text: #333333;
 $light-text: #ffffff;
 $menu-text-hover: #81b3d2;
 $menu-text-active: #766357;
-$button-text-active: rgba(255, 255, 255, 0.3);
+$button-text-active: rgba($light-text, 0.3);
 
 // Colors background
 $page-background: #f2f2f2;
 $body-background: #ffffff;
+$background-dark: #000000;
 $background-light: #eeeeee;
 $background-highlight: #81b3d2;
 
@@ -28,3 +29,7 @@ $input-hover:#e5e5e5;
 
 $decoration-line: #e5e5e5;
 $decoration-line-dark: #d6d6d6;
+
+// Colors video controls
+$controls-background: #f2f2f2;
+$volume-bar-background: rgba($background-dark, 0.6);

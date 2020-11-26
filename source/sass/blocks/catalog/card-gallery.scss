@@ -1,0 +1,33 @@
+.card-gallery__description {
+  padding: 10px 0;
+  line-height: 1.71;
+}
+
+.card-gallery__title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-gallery__autor {
+  color: $secondary-text;
+}
+
+.card-gallery__like-button {
+  position: relative;
+  padding-left: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 23px;
+    height: 23px;
+    margin: auto;
+    background: $page-background;
+  }
+}
