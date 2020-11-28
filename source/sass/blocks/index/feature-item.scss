@@ -3,6 +3,12 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    width: 33.33%;
+    padding: 40px 30px;
+    flex-shrink: 0;
+  }
+
   &--highlight {
     color: $light-text;
     background-color: $background-highlight;
@@ -14,12 +20,14 @@
 }
 
 .feature-item__title {
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
 }
 
 .feature-item__description {
+  margin-top: 30px;
   line-height: 1.5;
   color: $secondary-text;
 }

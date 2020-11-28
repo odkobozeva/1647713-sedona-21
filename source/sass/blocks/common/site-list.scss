@@ -3,6 +3,18 @@
   text-transform: uppercase;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    padding: 15px;
+    border: none;
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      margin-right: 20%;
+    }
+  }
+
   &:hover {
     color: $menu-text-hover;
     background-color: $menu-background-hover;
@@ -11,16 +23,28 @@
   &:active {
     color: $menu-text-active;
     background-color: $menu-background-active;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &--active {
     color: $menu-text-active;
     background-color: $menu-background-active;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   &--active:hover {
     color: $menu-text-active;
     background-color: $menu-background-active;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 }
 

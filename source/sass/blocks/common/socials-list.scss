@@ -1,3 +1,12 @@
-.socials-list {
-  padding: 15px;
+.socials-list__item {
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.socials-list__link {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: $background-highlight;
 }

@@ -1,7 +1,21 @@
-.feature-banner__content {
-  padding: 30px 10px;
+.feature-banner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.feature-banner__picture {
+  height: 260px;
+  flex-grow: 1;
+
+  &--image-left {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
+  }
 }
 
 .feature-banner__image {
   width: 100%;
+  height: 100%;
 }

@@ -3,15 +3,31 @@
 }
 
 .advantages__list {
-  padding: 0 10px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .advantages__item {
   padding: 20px 10px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 33.333%;
+    padding: 150px 35px 50px;
+    text-align: center;
+  }
+
+  &--souvenirs {
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
+  }
 }
 
 .advantages__title {
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;

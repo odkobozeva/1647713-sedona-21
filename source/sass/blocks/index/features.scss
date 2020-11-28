@@ -2,7 +2,16 @@
   padding: 0 20px;
   background-color: $background-light;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+  }
+
   .feature-item:not(:last-child) {
     border-bottom: 1px solid $decoration-line-dark;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 }
