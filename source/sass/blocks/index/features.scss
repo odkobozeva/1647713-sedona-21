@@ -1,9 +1,10 @@
 .features__list {
+  display: grid;
   padding: 0 20px;
   background-color: $background-light;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
   }
 

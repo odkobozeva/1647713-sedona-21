@@ -1,6 +1,5 @@
 .text-info {
   text-align: center;
-  text-transform: uppercase;
 }
 
 .text-info__title {
@@ -8,9 +7,11 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
+  text-transform: uppercase;
 }
 
 .text-info__description {
   line-height: 1.86;
   color: $secondary-text;
+  text-transform: uppercase;
 }

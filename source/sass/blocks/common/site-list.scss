@@ -1,46 +1,35 @@
 .site-list__item {
-  padding: 7px 0;
-  text-transform: uppercase;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-  @media (min-width: $tablet-width) {
-    width: 20%;
-    padding: 15px;
-    border: none;
+  @media (max-width: $mobile-width-only) {
+    background-color: $menu-background;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     @media (min-width: $tablet-width) {
-      margin-right: 20%;
+      grid-column: 4;
     }
   }
 
-  &:hover {
+  &:hover .site-list__link {
     color: $menu-text-hover;
-    background-color: $menu-background-hover;
-  }
 
-  &:active {
-    color: $menu-text-active;
-    background-color: $menu-background-active;
-
-    @media (min-width: $tablet-width) {
-      background-color: transparent;
+    @media (max-width: $mobile-width-only) {
+      background-color: $menu-background-hover;
     }
   }
 
   &--active {
-    color: $menu-text-active;
-    background-color: $menu-background-active;
-
-    @media (min-width: $tablet-width) {
-      background-color: transparent;
+    @media (max-width: $mobile-width-only) {
+      background-color: $menu-background-active;
     }
   }
 
-  &--active:hover {
+  &--active .site-list__link {
     color: $menu-text-active;
-    background-color: $menu-background-active;
+  }
+
+  &--active:hover .site-list__link {
+    color: $menu-text-active;
 
     @media (min-width: $tablet-width) {
       background-color: transparent;
@@ -49,5 +38,19 @@
 }
 
 .site-list__link {
-  display: block;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.22;
+  text-transform: uppercase;
+  color: $light-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 1.86;
+    color: $primary-text;
+  }
 }

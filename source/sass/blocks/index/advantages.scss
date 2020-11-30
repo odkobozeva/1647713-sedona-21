@@ -1,22 +1,29 @@
-.advantages {
-  text-align: left;
-}
-
 .advantages__list {
-  text-transform: uppercase;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .advantages__item {
-  padding: 20px 10px 20px 60px;
+  display: grid;
+  grid-template-columns: 40px auto;
+  gap: 10px 10px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 33.333%;
-    padding: 150px 35px 50px;
-    text-align: center;
+    grid-template-columns: auto;
+    grid-template-rows: 100px max-content max-content;
+    justify-items: center;
+    align-items: start;
+    padding: 40px 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 40px;
   }
 
   &--souvenirs {
@@ -26,14 +33,27 @@
   }
 }
 
+.advantages__image {
+  @media (min-width: $tablet-width) {
+    width: 75px;
+  }
+}
+
 .advantages__title {
-  margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
+  text-transform: uppercase;
 }
 
 .advantages__description {
+  grid-column: 2;
   line-height: 1.5;
   color: $secondary-text;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1;
+    text-align: center;
+  }
 }

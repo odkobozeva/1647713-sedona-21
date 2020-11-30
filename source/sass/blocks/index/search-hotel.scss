@@ -1,7 +1,6 @@
 .search-hotel__wrapper {
   padding: 30px 20px 50px;
   text-align: center;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     padding: 60px 150px;
@@ -13,12 +12,14 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 1.24;
+  text-transform: uppercase;
 }
 
 .search-hotel__description {
   margin-bottom: 30px;
   line-height: 1.71;
   color: $secondary-text;
+  text-transform: uppercase;
 }
 
 .search-hotel__map {

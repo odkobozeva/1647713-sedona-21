@@ -1,22 +1,11 @@
 .main-nav {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2.22;
-  color: $light-text;
-  background-color: $menu-background;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    color: $primary-text;
-    background-color: transparent;
-  }
+  grid-row: 1;
+  grid-column: 1 / -1;
 }
 
 .main-nav__list {
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    line-height: 1.86;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
