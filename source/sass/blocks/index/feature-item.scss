@@ -1,15 +1,12 @@
 .feature-item {
-  padding: 30px 15px;
+  display: grid;
+  gap: 15px;
+  padding: 25px 20px;
   text-align: center;
-  text-transform: uppercase;
 
-  &--highlight {
-    color: $light-text;
-    background-color: $background-highlight;
-  }
-
-  &--highlight .feature-item__description {
-    color: inherit;
+  @media (min-width: $tablet-width) {
+    grid-template-rows: auto auto 1fr;
+    padding: 40px;
   }
 }
 
@@ -17,9 +14,22 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
+  br {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+  }
 }
 
 .feature-item__description {
   line-height: 1.5;
   color: $secondary-text;
+  text-transform: uppercase;
 }

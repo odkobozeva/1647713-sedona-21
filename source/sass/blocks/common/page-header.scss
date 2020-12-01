@@ -1,14 +1,39 @@
 .page-header {
-  position: relative;
-  text-align: center;
-  height: 100%;
-  min-height: 56px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 56px;
+  grid-row: 1;
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 56px;
+  }
 }
 
 .page-header__toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  width: 22px;
-  height: 22px;
+  grid-row: 1;
+  grid-column-end: -1;
+  justify-self: end;
+  align-self: start;
+  height: 20px;
+  width: 20px;
+  margin: 15px;
+  border: none;
+  z-index: 5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__logo {
+  justify-self: center;
+  align-self: start;
+  border: 1px solid;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
 }

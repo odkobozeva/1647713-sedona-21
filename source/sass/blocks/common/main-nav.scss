@@ -1,7 +1,11 @@
 .main-nav {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  color: $light-text;
-  background-color: $menu-background;
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
