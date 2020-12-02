@@ -43,7 +43,8 @@
     <section class="review">
       <div class="review__info text-info">
         <h2 class="text-info__title">Оставьте свой отзыв</h2>
-        <p class="text-info__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        <p class="text-info__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br>а также о
+          посещенных
           вами достопримечательностях</p>
       </div>
 
@@ -51,99 +52,114 @@
         <fieldset class="review-form__fieldset review-form__fieldset--vertical">
           <legend class="review-form__legend">Представьтесь:</legend>
 
-          <div class="field">
-            <label class="field__label" for="name">Имя*:</label>
-            <input class="field__input" type="text" name="user_name" id="name" placeholder="Петр" required>
-          </div>
+          <div class="field-list">
+            <div class="field">
+              <label class="field__label" for="name">Имя*:</label>
+              <input class="field__input" type="text" name="user_name" id="name" placeholder="Петр" required>
+            </div>
 
-          <div class="field">
-            <label class="field__label" for="surname">Фамилия*:</label>
-            <input class="field__input" type="text" name="user_surname" id="surname" placeholder="Иванов" required>
-          </div>
+            <div class="field">
+              <label class="field__label" for="surname">Фамилия*:</label>
+              <input class="field__input" type="text" name="user_surname" id="surname" placeholder="Иванов" required>
+            </div>
 
-          <div class="field">
-            <label class="field__label" for="patronymic">Отчество:</label>
-            <input class="field__input" type="text" name="user_patronymic" id="patronymic" placeholder="Александрович">
+            <div class="field">
+              <label class="field__label" for="patronymic">Отчество:</label>
+              <input class="field__input" type="text" name="user_patronymic" id="patronymic"
+                placeholder="Александрович">
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="review-form__fieldset review-form__fieldset--horisontal">
           <legend class="review-form__legend">Контактная информация:</legend>
 
-          <div class="field">
-            <label class="field__label" for="phone">Контактный телефон*:</label>
-            <div class="field__group">
-              <input class="field__input" type="tel" name="user_phone" id="phone" placeholder="Введите телефон"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-              <span class="field__icon field__icon--phone"></span>
+          <div class="field-list">
+            <div class="field">
+              <label class="field__label" for="phone"><span class="field__label--hidden">Контактный</span>
+                телефон*:</label>
+              <div class="field__group">
+                <input class="field__input" type="tel" name="user_phone" id="phone" placeholder="Введите телефон"
+                  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                <span class="field__icon field__icon--phone"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="email">Электронная почта*:</label>
+              <div class="field__group">
+                <input class="field__input" type="email" name="user_email" id="email" placeholder="Введите e-mail"
+                  required>
+                <span class="field__icon field__icon--email"></span>
+              </div>
             </div>
           </div>
-
-          <div class="field">
-            <label class="field__label" for="email">Электронная почта*:</label>
-            <div class="field__group">
-              <input class="field__input" type="email" name="user_email" id="email" placeholder="Введите e-mail"
-                required>
-              <span class="field__icon field__icon--email"></span>
-            </div>
-          </div>
-
         </fieldset>
 
         <fieldset class="review-form__fieldset review-form__fieldset--radiobutton">
           <legend class="review-form__legend">Ваше общее впечатление:</legend>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="radio" name="impression" value="positive" checked>
-              <span class="field__helper">Скорее положительное</span>
-            </label>
-          </div>
+          <div class="field-list">
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="radio" name="impression" value="positive" checked>
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Скорее положительное</span>
+              </label>
+            </div>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="radio" name="impression" value="negative">
-              <span class="field__helper">Скорее отрицательное</span>
-            </label>
-          </div>
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="radio" name="impression" value="negative">
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Скорее отрицательное</span>
+              </label>
+            </div>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="radio" name="impression" value="neutral">
-              <span class="field__helper">Затрудняюсь ответить</span>
-            </label>
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="radio" name="impression" value="neutral">
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Затрудняюсь ответить</span>
+              </label>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="review-form__fieldset review-form__fieldset--checkbox">
-          <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+          <legend class="review-form__legend">Посещенные<br>достопримечательности:</legend>
+          <div class="field-list">
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="checkbox" name="devils_bridge" checked>
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Мост Дьявола</span>
+              </label>
+            </div>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="checkbox" name="devils_bridge" checked>
-              <span class="field__helper">Мост Дьявола</span>
-            </label>
-          </div>
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="checkbox" name="mount_bell" checked>
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Гора-Колокол</span>
+              </label>
+            </div>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="checkbox" name="mount_bell" checked>
-              <span class="field__helper">Гора-Колокол</span>
-            </label>
-          </div>
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="checkbox" name="slide_park" checked>
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Слайд-парк</span>
+              </label>
+            </div>
 
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="checkbox" name="slide_park" checked>
-              <span class="field__helper">Слайд-парк</span>
-            </label>
-          </div>
-
-          <div class="field">
-            <label class="field__label">
-              <input class="field__input visually-hidden" type="checkbox" name="red_rocks">
-              <span class="field__helper">Красные скалы</span>
-            </label>
+            <div class="field">
+              <label class="field__label">
+                <input class="field__input visually-hidden" type="checkbox" name="red_rocks">
+                <span class="field__input-choice"></span>
+                <span class="field__helper">Красные скалы</span>
+              </label>
+            </div>
           </div>
         </fieldset>
 

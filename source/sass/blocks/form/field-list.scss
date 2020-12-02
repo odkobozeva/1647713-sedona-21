@@ -1,0 +1,8 @@
+.field-list {
+  display: grid;
+  gap: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 20px 0;
+  }
+}
