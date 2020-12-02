@@ -54,6 +54,12 @@
     }
   }
 
+  &--horisontal .field:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
+  }
+
   &--horisontal .review-form__legend {
     @media (min-width: $tablet-width) {
       margin-bottom: 20px;
@@ -102,7 +108,7 @@
   &--checkbox .field-list {
     @media (min-width: $tablet-width) {
       grid-template-columns: repeat(2, max-content);
-      gap: 50px;
+      gap: 30px 70px;
       justify-content: center;
     }
 
