@@ -1,50 +1,133 @@
+.review-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0;
+  }
+}
+
 .review-form__fieldset {
   margin: 0;
-  padding: 13px 20px;
   border: none;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 20px;
+  }
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid $decoration-line;
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid $decoration-line;
+    }
+  }
+
+  &--vertical {
+    @media (min-width: $tablet-width) {
+      padding-left: 58px;
+      border-left: 1px solid $decoration-line;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
+  }
+
+  &--vertical .review-form__legend {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+      text-align: left;
+    }
   }
 
   &--vertical .field {
     display: flex;
-    margin-bottom: 20px;
+    align-items: center;
   }
 
   &--vertical .field__label {
     margin-right: 15px;
   }
 
+  &--horisontal {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &--horisontal .field:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-right: 80px;
+    }
+  }
+
+  &--horisontal .review-form__legend {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--horisontal .field-list {
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+  }
+
+  &--horisontal .field {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &--horisontal .field__label {
-    margin-left: 22px;
+    display: inline-block;
+    margin: 0 0 8px 22px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0 15px 0 0;
+    }
   }
 
-  &--checkbox .field {
-    position: relative;
-    padding-left: 80px;
-    margin-bottom: 26px;
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+    }
   }
 
-  &--checkbox .field__helper {
-    padding: 10px 0;
+  &--checkbox .review-form__legend {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
   }
 
-  &--checkbox .field__helper::before {
-    content: "";
-    width: 56px;
-    height: 56px;
-    background-color: $input-background;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+  &--checkbox .field-list {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: repeat(2, max-content);
+      gap: 30px 70px;
+      justify-content: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, max-content);
+      justify-content: space-between;
+    }
+  }
+
+  &--checkbox .field__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &--checkbox .field__input-choice {
     border-radius: 10px;
-    cursor: pointer;
   }
 
-  &--checkbox .field__input:checked + .field__helper::after {
+  &--checkbox .field__input:checked + .field__input-choice::before {
     content: "";
     position: absolute;
     left: 20px;
@@ -58,37 +141,50 @@
     transform: rotate(-45deg);
   }
 
-  &--radiobutton .field {
-    position: relative;
-    padding-left: 80px;
-    margin-bottom: 14px;
+  &--radiobutton {
+    order: -1;
   }
 
-  &--radiobutton .field__helper {
-    padding: 12px 0;
+  &--radiobutton .review-form__legend {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+      text-align: left;
+    }
   }
 
-  &--radiobutton .field__helper::before {
+  &--radiobutton .field__label {
+    display: flex;
+    align-items: center;
+  }
+
+  &--radiobutton .field__input-choice {
+    border-radius: 50%;
+  }
+
+  &--radiobutton .field__input:checked + .field__input-choice::before {
     content: "";
-    width: 56px;
-    height: 56px;
-    background-color: $input-background;
     position: absolute;
+    width: 18px;
+    height: 18px;
     left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     border-radius: 50%;
-    cursor: pointer;
-  }
-
-  &--radiobutton .field__input:checked + .field__helper::before {
     background-color: $input-checked;
-    border: 18px solid $input-background;
   }
 
-  &--radiobutton .field__input:checked + .field__helper:hover::before {
-    border: 18px solid $input-hover;
+  &--textarea {
+    grid-column: 1 / -1;
+  }
+
+  &--textarea .review-form__legend {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -99,8 +195,31 @@
   line-height: 1.44;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
+  }
 }
 
 .review-form__data-processing {
+  grid-column: 1 / -1;
   padding: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.review-form__button {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.review-form__notice {
+  text-transform: uppercase;
 }
