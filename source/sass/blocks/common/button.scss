@@ -12,11 +12,11 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $button-background-hover;
+    background-color: $button-background--hover;
   }
 
   &:active {
-    color: $button-text-active;
-    background-color: $button-background-active;
+    color: $button-text--active;
+    background-color: $button-background--active;
   }
 }
