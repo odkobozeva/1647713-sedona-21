@@ -1,0 +1,45 @@
+.radio-field__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .radio-field__input-choice::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: $input--checked;
+  }
+}
+
+.radio-field__input-choice {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.radio-field__label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.86;
+  text-transform: none;
+  cursor: pointer;
+}

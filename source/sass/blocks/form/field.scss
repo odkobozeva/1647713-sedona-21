@@ -10,13 +10,21 @@
   color: $secondary-text;
 
   &:hover .field__input-choice {
-    background-color: $input-hover;
+    background-color: $input--hover;
   }
 
-  &--hidden {
+  &--contacts {
+    padding-left: 22px;
+
     @media (min-width: $desktop-width) {
-      display: none;
+      padding-left: 0;
     }
+  }
+}
+
+.field__label-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 
@@ -30,37 +38,14 @@
   border: 4px solid $input-background;
 
   &:hover {
-    background-color: $input-hover;
-    border: 4px solid $input-hover;
+    background-color: $input--hover;
+    border: 4px solid $input--hover;
   }
 
   &:active,
   &:focus {
     background-color: transparent;
-    border: 4px solid $input-hover;
+    border: 4px solid $input--hover;
     outline: none;
-  }
-}
-
-.field__input-choice {
-  position: relative;
-  display: inline-block;
-  width: 58px;
-  height: 58px;
-  margin-right: 20px;
-  background-color: #f2f2f2;
-  cursor: pointer;
-}
-
-.field__helper {
-  display: inline-block;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1.86;
-  text-transform: none;
-  cursor: pointer;
-
-  &:hover::before {
-    background-color: $input-hover;
   }
 }
