@@ -1,0 +1,45 @@
+.checkbox-field__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .checkbox-field__input-choice::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -4px;
+    bottom: 0;
+    width: 20px;
+    height: 12px;
+    margin: auto;
+    border-left: 3px solid $input--checked;
+    border-bottom: 3px solid $input--checked;
+    transform: rotate(-45deg);
+  }
+}
+
+.checkbox-field__input-choice {
+  position: relative;
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkbox-field__label {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.86;
+  text-transform: none;
+  cursor: pointer;
+}

@@ -2,9 +2,9 @@
 $primary-text: #000000;
 $secondary-text: #333333;
 $light-text: #ffffff;
-$menu-text-hover: #81b3d2;
-$menu-text-active: #766357;
-$button-text-active: rgba($light-text, 0.3);
+$menu-text--hover: #81b3d2;
+$menu-text--active: #766357;
+$button-text--active: rgba($light-text, 0.3);
 
 // Colors background
 $page-background: #f2f2f2;
@@ -14,28 +14,31 @@ $background-light: #eeeeee;
 $background-highlight: #81b3d2;
 
 $menu-background: #81b3d2;
-$menu-background-hover: #669ec0;
-$menu-background-active: #5496bd;
+$menu-background--hover: #669ec0;
+$menu-background--active: #5496bd;
 
 $button-background: #81b3d2;
-$button-background-hover: #669ec0;
-$button-background-active: #5496bd;
-$button-background-disabled: #e5e5e5;
+$button-background--hover: #669ec0;
+$button-background--active: #5496bd;
+$button-background--disabled: #e5e5e5;
 
 // Colors input
 $input-background: #f2f2f2;
-$input-checked: #333333;
-$input-hover:#e5e5e5;
+$input--checked: #333333;
+$input--hover:#e5e5e5;
 
 $decoration-line: #e5e5e5;
 $decoration-line-dark: #d6d6d6;
+
+//Gallery card
+$card-gallery-background-light: #f2f2f2;
+$card-gallery-background-dark: rgba($background-dark, 0.3);
 
 // Colors video controls
 $controls-background: #f2f2f2;
 $volume-bar-background: rgba($background-dark, 0.6);
 
 // Viewports
-
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
-$mobile-width-only: 767px;
