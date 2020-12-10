@@ -6,12 +6,17 @@
   margin-bottom: 30px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 1.5;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
+  }
 }
 
 .text-info__description {
-  line-height: 1.86;
+  line-height: 1.8;
   color: $secondary-text;
   text-transform: uppercase;
 }

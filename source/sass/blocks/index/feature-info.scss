@@ -1,7 +1,19 @@
 .feature-info {
-  padding: 40px 25px;
+  padding: 31px 25px 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 40px 120px;
+    padding: 42px 25px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 25px 43px;
+  }
+}
+
+.feature-info__title {
+  br {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 }
