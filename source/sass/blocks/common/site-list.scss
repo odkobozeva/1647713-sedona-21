@@ -1,7 +1,26 @@
 .site-list__item {
+  position: relative;
+
   @media (max-width: $mobile-width-only) {
     background-color: $menu-background;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:last-child::after {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 7px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
   }
 
   &:nth-child(3) {
@@ -39,7 +58,7 @@
 
 .site-list__link {
   display: flex;
-  height: 56px;
+  height: 54px;
   align-items: center;
   justify-content: center;
   font-weight: bold;
@@ -49,6 +68,7 @@
   color: $light-text;
 
   @media (min-width: $tablet-width) {
+    height: 56px;
     font-size: 14px;
     line-height: 1.86;
     color: $primary-text;

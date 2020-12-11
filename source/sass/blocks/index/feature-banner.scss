@@ -15,19 +15,14 @@
       order: -1;
     }
   }
-
-  .feature-item {
-    color: $light-text;
-    background-color: $background-highlight;
-  }
-
-  .feature-item__description {
-    color: inherit;
-  }
 }
 
 .feature-banner__picture {
   height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
+  }
 }
 
 .feature-banner__image {

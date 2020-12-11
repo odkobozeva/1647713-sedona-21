@@ -9,7 +9,40 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+
+  <!-- Стили для проверки Pixel Perfect. Начало -->
+  <style>
+    html {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media (width: 320px) {
+      html {
+        background-image: url("img/Mobile.png");
+      }
+    }
+
+    @media (width: 768px) {
+      html {
+        background-image: url("img/Tablet.png");
+      }
+    }
+
+    @media (width: 1280px) {
+      html {
+        background-image: url("img/Desktop.png");
+      }
+    }
+
+    body {
+      opacity: 1;
+    }
+  </style>
+  <!-- Стили для проверки Pixel Perfect. Конец -->
+
+  <header class="page-header page-header--opened">
     <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
@@ -41,15 +74,17 @@
     </section>
 
     <section class="feature-info text-info">
-      <h2 class="text-info__title">Седона&nbsp;&mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h2 class="text-info__title feature-info__title">Седона&nbsp;&mdash; небольшой городок в Аризоне,
+        <br>заслуживающий большего!</h2>
       <p class="text-info__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
     <section class="feature-banner">
-      <div class="feature-banner__content feature-item feature-item--highlight">
-        <h3 class="feature-item__title">Настоящий <br>городок</h3>
-        <span class="feature-item__number">1</span>
-        <p class="feature-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      <div class="feature-banner__info feature-item feature-item--highlight feature-item--decorate">
+        <h3 class="feature-item__title feature-item__title--light-text">Настоящий <br>городок</h3>
+        <span class="feature-item__number feature-item__number--light-text">№1</span>
+        <p class="feature-item__description feature-item__description--light-text">Седона не аттракцион для туристов,
+          там течет своя жизнь</p>
       </div>
       <div class="feature-banner__picture">
         <img class="feature-banner__image" src="https://via.placeholder.com/280x230" alt="life in city" width="280"
@@ -68,24 +103,26 @@
         <div class="advantages__item advantages__item--souvenirs">
           <img class="advantages__image" src="https://via.placeholder.com/40x40" alt="souvenirs" width="40" height="40">
           <h3 class="advantages__title">Сувениры</h3>
-          <p class="advantages__description">Не только китайского, но и местного производства!</p>
+          <p class="advantages__description">Не только китайского, <br class="text-wrap">но и местного производства!</p>
         </div>
         <div class="advantages__item advantages__item--food">
           <img class="advantages__image" src="https://via.placeholder.com/40x40" alt="food" width="40" height="40">
           <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <p class="advantages__description">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
         </div>
       </div>
     </section>
 
     <section class="feature-banner feature-banner--image-left">
       <div class="feature-banner__info feature-item feature-item--highlight">
-        <h3 class="feature-item__title">Там есть <br>Мост Дьявола</h3>
-        <span class="feature-item__number">2</span>
-        <p class="feature-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <h3 class="feature-item__title feature-item__title--light-text">Там есть <br>Мост Дьявола</h3>
+        <span class="feature-item__number feature-item__number--light-text">№2</span>
+        <p class="feature-item__description feature-item__description--light-text">Да, по нему можно пройти! Если вы
+          осмелитесь, конечно</p>
       </div>
-      <div class="feature-banner__picture"><img class="feature-banner__image"
-          src="https://via.placeholder.com/280x230" alt="devil's bridge" width="280" height="230">
+      <div class="feature-banner__picture">
+        <img class="feature-banner__image" src="https://via.placeholder.com/280x230" alt="devil's bridge" width="280"
+          height="230">
       </div>
     </section>
 
@@ -93,18 +130,20 @@
       <div class="features__list">
         <div class="feature-item">
           <h3 class="feature-item__title">Небольшая <br>площадь</h3>
-          <span class="feature-item__number">3</span>
+          <span class="feature-item__number">№3</span>
           <p class="feature-item__description">Все интересные места находятся очень близко</p>
         </div>
         <div class="feature-item">
           <h3 class="feature-item__title">Красивая <br>дорога</h3>
-          <span class="feature-item__number">4</span>
-          <p class="feature-item__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          <span class="feature-item__number">№4</span>
+          <p class="feature-item__description">Ехать в седону из <span class="text-no-wrap">Лас-Вегаса</span> совсем
+            <br>не скучно!</p>
         </div>
         <div class="feature-item">
           <h3 class="feature-item__title">Мало <br>туристов</h3>
-          <span class="feature-item__number">5</span>
-          <p class="feature-item__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          <span class="feature-item__number">№5</span>
+          <p class="feature-item__description">Большинство едет в <span class="text-no-wrap">Гранд-Каньон</span> и
+            <br>толпится там</p>
         </div>
       </div>
     </section>
@@ -112,7 +151,7 @@
     <section class="search-hotel">
       <div class="search-hotel__wrapper">
         <h3 class="search-hotel__title">Заинтересовались?</h3>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
           предложения гостиниц в Седоне</p>
         <button class="search-hotel__button button" type="button">Найти гостиницу</button>
       </div>
@@ -144,8 +183,9 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">Разработано
-        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
+        <p class="copyright__text">Разработано</p>
+        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="40" height="40">
       </a>
     </div>
   </footer>

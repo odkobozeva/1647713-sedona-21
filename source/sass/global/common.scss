@@ -36,3 +36,15 @@ button {
   padding: 0;
   border: none;
 }
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
