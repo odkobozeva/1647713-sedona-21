@@ -11,9 +11,22 @@
 }
 
 .feature-info__title {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 1.24;
+  }
+
   br {
     @media (max-width: $mobile-width-only) {
       display: none;
     }
   }
+}
+
+.feature-info__description {
+  line-height: 1.8;
 }
