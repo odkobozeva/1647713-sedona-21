@@ -82,9 +82,7 @@
       <div class="reviews__info text-info">
         <h2 class="reviews__title text-info__title">Оставьте свой отзыв</h2>
         <p class="reviews__description text-info__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
-          <br>а также о
-          посещенных
-          вами достопримечательностях
+          <br>а также о посещенных вами достопримечательностях
         </p>
       </div>
 
@@ -112,13 +110,13 @@
         </fieldset>
 
         <fieldset class="form__fieldset reviews__fieldset reviews__fieldset--horisontal">
-          <legend class="legend reviews__legend reviews__legend--contact">Контактная информация:</legend>
+          <legend class="legend reviews__legend">Контактная информация:</legend>
 
           <ul class="fields-list reviews__fields-list reviews__fields-list--contacts">
             <li class="field reviews__field reviews__field--contacts">
               <label class="field__label field__label--contacts" for="phone">
-                <span class="field__label-hidden">Контактный</span>
-                телефон*:</label>
+                <span class="field__label-hidden">Контактный</span> телефон*:
+              </label>
               <div class="field__group">
                 <input class="field__input" type="tel" name="user_phone" id="phone" placeholder="Введите телефон"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
@@ -127,7 +125,8 @@
             </li>
 
             <li class="field reviews__field reviews__field--contacts">
-              <label class="field__label field__label--contacts" for="email">Электронная&nbsp;почта*:</label>
+              <label class="field__label field__label--contacts" for="email">
+                <span class="text-no-wrap">Электронная почта*:</span></label>
               <div class="field__group">
                 <input class="field__input" type="email" name="user_email" id="email" placeholder="Введите e-mail"
                   required>
@@ -138,8 +137,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset reviews__fieldset reviews__fieldset--impression">
-          <legend class="legend reviews__legend reviews__legend--left">Ваше общее впечатление:
-          </legend>
+          <legend class="legend reviews__legend reviews__legend--left">Ваше общее впечатление:</legend>
 
           <ul class="fields-list reviews__fields-list reviews__fields-list--radiobutton">
             <li>
@@ -169,7 +167,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset reviews__fieldset  reviews__fieldset--checklist">
-          <legend class="legend reviews__legend reviews__legend reviews__legend--checklist">
+          <legend class="legend reviews__legend reviews__legend--checklist">
             Посещенные<br>достопримечательности:</legend>
           <ul class="fields-list reviews__fields-list reviews__fields-list--checklist">
             <li>
@@ -224,7 +222,8 @@
         <div class="reviews__popup reviews__popup--success popup">
           <p class="popup__title">Ваш отзыв отправлен!</p>
           <p class="popup__description popup__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к
-            нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+            нам.<br>В ближайшее время мы опубликуем его на сайте.
+          </p>
           <div class="popup__button-wrapper popup__button-wrapper--success">
             <button class="popup__button button" type="button">Закрыть окно</button>
           </div>
@@ -232,7 +231,8 @@
         <div class="reviews__popup reviews__popup--error popup">
           <p class="popup__title">Что-то пошло <br>не так!</p>
           <p class="popup__description popup__description--error">Проверьте поля, выделенные красным, скорее всего вы
-            забыли их заполнить</p>
+            забыли их заполнить
+          </p>
           <div class="popup__button-wrapper popup__button-wrapper--error">
             <button class="popup__button button" type="button">Ок</button>
           </div>

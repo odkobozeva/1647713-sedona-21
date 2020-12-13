@@ -87,7 +87,7 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 50px;
       padding-left: 56px;
-      border-left: 1px solid $decoration-line;
+      border-left: 1px solid $decoration-line-dark;
     }
 
     @media (min-width: $desktop-width) {
@@ -97,14 +97,60 @@
 
   &--horisontal {
     @media (min-width: $tablet-width) {
+      position: relative;
       grid-column: 1 / -1;
+    }
+
+    &::before,
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        top: 30px;
+        width: 124px;
+        height: 1px;
+        background-color: $decoration-line-dark;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        right: 0;
+      }
     }
   }
 
   &--checklist {
     @media (min-width: $tablet-width) {
+      position: relative;
       grid-column: 1 / -1;
       margin-bottom: 20px;
+    }
+
+    &::before,
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        width: 124px;
+        height: 1px;
+        top: 45px;
+        background-color: $decoration-line-dark;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $tablet-width) {
+        right: 0;
+      }
     }
   }
 }
