@@ -36,10 +36,6 @@
     background-color: $menu-background;
     box-shadow: 0 9px 0 0 $menu-background, 0 18px 0 0 $menu-background;
   }
-
-  &:focus {
-    outline: none;
-  }
 }
 
 .page-header--opened .page-header__toggle::after,

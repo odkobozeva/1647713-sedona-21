@@ -5,6 +5,18 @@
   @media (min-width: $tablet-width) {
     height: 520px;
   }
+
+  &--small {
+    height: 158px;
+
+    @media (min-width: $tablet-width) {
+      height: 292px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 302px;
+    }
+  }
 }
 
 .hero__background {
