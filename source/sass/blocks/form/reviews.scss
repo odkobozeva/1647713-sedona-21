@@ -51,8 +51,6 @@
 }
 
 .reviews__form {
-  position: relative;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -334,40 +332,4 @@
 
 .reviews__notice {
   text-transform: uppercase;
-}
-
-.reviews__popup {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: $body-background;
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-
-  &--error {
-    bottom: 487px;
-    max-width: 400px;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      bottom: 224px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 108px;
-    }
-  }
-
-  &--success {
-    bottom: 118px;
-    max-width: 640px;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      bottom: 385px;
-    }
-
-    @media (min-width: $desktop-width) {
-      bottom: 380px;
-    }
-  }
 }

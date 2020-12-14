@@ -1,7 +1,5 @@
 .socials-list__item {
-  &:not(:last-child) {
-    margin-right: 5px;
-  }
+  margin: 0 3px;
 }
 
 .socials-list__link {

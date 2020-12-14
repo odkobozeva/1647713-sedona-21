@@ -20,14 +20,13 @@
 }
 
 .card-gallery__info {
-  display: grid;
-  gap: 10px;
   padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px;
+    display: grid;
+    padding: 17px 20px;
     background-color: $card-gallery-background-light;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto minmax(65px, max-content);
     align-items: center;
     justify-content: space-between;
   }
@@ -41,8 +40,10 @@
   }
 }
 
-.card-gallery__description {
-  line-height: 1.71;
+.card-gallery__wrapper {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 13px;
+  }
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
@@ -51,6 +52,8 @@
 
 .card-gallery__title {
   font-weight: bold;
+  font-size: 14px;
+  line-height: 1.71;
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
@@ -59,6 +62,8 @@
 }
 
 .card-gallery__autor {
+  font-size: 14px;
+  line-height: 1.71;
   color: $secondary-text;
 
   @media (min-width: $desktop-width) {
@@ -68,12 +73,16 @@
 
 .card-gallery__like-button {
   position: relative;
-  padding-left: 30px;
+  padding-left: 37px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     color: $light-text;
