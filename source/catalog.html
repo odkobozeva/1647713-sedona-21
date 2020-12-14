@@ -9,6 +9,38 @@
 </head>
 
 <body class="page__body">
+
+    <!-- Стили для проверки Pixel Perfect. Начало -->
+    <style>
+      html {
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      @media (width: 320px) {
+        html {
+          background-image: url("img/catalog-mobile.png");
+        }
+      }
+
+      @media (width: 768px) {
+        html {
+          background-image: url("img/catalog-tablet.png");
+        }
+      }
+
+      @media (width: 1280px) {
+        html {
+          background-image: url("img/catalog-desktop.png");
+        }
+      }
+
+      body {
+        opacity: 1;
+      }
+    </style>
+    <!-- Стили для проверки Pixel Perfect. Конец -->
   <header class="page-header page-header--opened">
     <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
@@ -34,7 +66,7 @@
 
   <main class="page-main">
 
-    <section class="hero">
+    <section class="hero hero--small">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
       <img class="hero__background" src="https://via.placeholder.com/320x400" alt="canyon view" width="320"
         height="400">
@@ -42,8 +74,8 @@
 
     <section class="gallery">
       <div class="gallery__info text-info">
-        <h2 class="text-info__title">Фото и видео</h2>
-        <p class="text-info__description gallery__description">Не можете решиться на путешествие из-за курса?
+        <h2 class="gallery__title text-info__title">Фото и видео</h2>
+        <p class="gallery__description text-info__description">Не можете решиться на путешествие из-за курса?
           <br>Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
 
@@ -53,8 +85,8 @@
             alt="On the road to Sedona">
         </a>
         <figcaption class="card-gallery__info">
-          <div class="card-gallery__description">
-            <h3 class="card-gallery__title">Не родные просторы</h3>
+          <div class="card-gallery__wrapper">
+            <h3 class="card-gallery__title">Неродные просторы</h3>
             <p class="card-gallery__autor">Автор фото: Борис</p>
           </div>
           <p class="card-gallery__like">
@@ -69,7 +101,7 @@
             alt="Local flora">
         </a>
         <figcaption class="card-gallery__info">
-          <div class="card-gallery__description">
+          <div class="card-gallery__wrapper">
             <h3 class="card-gallery__title">Местная растительность</h3>
             <p class="card-gallery__autor">Автор фото: Сергей</p>
           </div>
@@ -85,7 +117,7 @@
             alt="Serpentine road">
         </a>
         <figcaption class="card-gallery__info">
-          <div class="card-gallery__description">
+          <div class="card-gallery__wrapper">
             <h3 class="card-gallery__title">Дорога на север</h3>
             <p class="card-gallery__autor">Автор фото: Петр</p>
           </div>
@@ -101,7 +133,7 @@
             alt="Devil's bridge trail">
         </a>
         <figcaption class="card-gallery__info">
-          <div class="card-gallery__description">
+          <div class="card-gallery__wrapper">
             <h3 class="card-gallery__title">Мост Дьявола</h3>
             <p class="card-gallery__autor">Автор фото: Антон</p>
           </div>
@@ -114,8 +146,8 @@
 
     <section class="video-presentation">
       <div class="video-presentation__info text-info">
-        <h2 class="text-info__title">Все еще сомневаетесь?</h2>
-        <p class="text-info__description video-presentation__description">Смотрите видеопрезентацию и скорее за
+        <h2 class="video-presentation__title text-info__title">Все еще сомневаетесь?</h2>
+        <p class="video-presentation__description text-info__description">Смотрите видеопрезентацию и скорее за
           билетами, пока они <br>не подорожали в очередной раз!</p>
       </div>
 
@@ -157,7 +189,7 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
         <p class="copyright__text">Разработано</p>
-        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="40" height="40">
+        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="35">
       </a>
     </div>
   </footer>

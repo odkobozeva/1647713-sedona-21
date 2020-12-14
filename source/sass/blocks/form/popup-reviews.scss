@@ -1,4 +1,25 @@
-.popup__title {
+.popup-reviews {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $body-background;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 2;
+
+  &--error {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &--success {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.popup-reviews__title {
   padding-top: 40px;
   font-weight: bold;
   font-size: 18px;
@@ -9,6 +30,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 50px;
     font-size: 30px;
+    line-height: 0.86;
   }
 
   br {
@@ -18,21 +40,21 @@
   }
 }
 
-.popup__description {
+.popup-reviews__description {
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
   text-transform: uppercase;
 
   &--success {
-    padding: 29px 41px 41px;
+    padding: 29px 41px 40px;
 
     @media (min-width: $tablet-width) {
-      padding: 25px 41px 47px;
+      padding: 33px 41px 47px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 23px 41px 43px;
+      padding: 36px 41px 44px;
     }
   }
 
@@ -40,12 +62,12 @@
     padding: 29px 41px 24px;
 
     @media (min-width: $tablet-width) {
-      padding: 27px 37px 37px;
+      padding: 21px 37px 37px;
     }
   }
 }
 
-.popup__button-wrapper {
+.popup-reviews__button-wrapper {
   &--success {
     padding: 20px;
     background-color: $page-background;
@@ -59,12 +81,12 @@
     padding: 0 70px 36px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 65px 50px;
+      padding: 0 65px 49px;
     }
   }
 }
 
-.popup__button {
+.popup-reviews__button {
   padding: 18px 10px 14px;
   font-size: 18px;
   line-height: 1.44;
