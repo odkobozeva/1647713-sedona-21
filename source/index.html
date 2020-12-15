@@ -20,19 +20,19 @@
 
     @media (width: 320px) {
       html {
-        background-image: url("img/Mobile.png");
+        background-image: url("img/Mobile.jpg");
       }
     }
 
     @media (width: 768px) {
       html {
-        background-image: url("img/Tablet.png");
+        background-image: url("img/Tablet.jpg");
       }
     }
 
     @media (width: 1280px) {
       html {
-        background-image: url("img/Desktop.png");
+        background-image: url("img/Desktop.jpg");
       }
     }
 
@@ -61,7 +61,10 @@
       </ul>
     </nav>
     <a class="page-header__logo logo">
-      <img src="https://via.placeholder.com/100x85" alt="city of sedona" width="100" height="85">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="100" height="85" alt="city of sedona">
+      </picture>
     </a>
   </header>
 
@@ -69,8 +72,20 @@
 
     <section class="hero">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
-      <img class="hero__background" src="https://via.placeholder.com/320x400" alt="canyon view" width="320"
-        height="400">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+        <img class="hero__background" src="img/back-mobile.jpg" srcset="img/back-mobile@2x.jpg 2x" alt="canyon view"
+          width="320" height="400">
+      </picture>
+
+      <img class="hero__text" src="img/text-index.svg" alt="Welcome to the gorgeous Sedona" width="282" height="214">
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
+        <img class="hero__triangle" src="img/intro-triangle.svg" alt="Triangle" width="320" height="57">
+      </picture>
     </section>
 
     <section class="feature-info text-info">
@@ -91,8 +106,12 @@
         </p>
       </div>
       <div class="feature-banner__picture">
-        <img class="feature-banner__image" src="https://via.placeholder.com/280x230" alt="life in city" width="280"
-          height="230">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+          <img class="feature-banner__image" src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x"
+            alt="life in city" width="280" height="230">
+        </picture>
       </div>
     </section>
 
@@ -100,17 +119,17 @@
       <h3 class="visually-hidden">Наши преимущества</h3>
       <div class="advantages__list">
         <div class="advantages__item advantages__item--house">
-          <img class="advantages__image" src="https://via.placeholder.com/40x40" alt="house" width="40" height="40">
+          <img class="advantages__image" src="img/icon-house.svg" alt="house" width="39" height="37">
           <h3 class="advantages__title">Жилье</h3>
           <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="advantages__item advantages__item--souvenirs">
-          <img class="advantages__image" src="https://via.placeholder.com/40x40" alt="souvenirs" width="40" height="40">
+          <img class="advantages__image" src="img/icon-gift.svg" alt="gift" width="32" height="38">
           <h3 class="advantages__title">Сувениры</h3>
           <p class="advantages__description">Не только китайского, <br class="text-wrap">но и местного производства!</p>
         </div>
         <div class="advantages__item advantages__item--food">
-          <img class="advantages__image" src="https://via.placeholder.com/40x40" alt="food" width="40" height="40">
+          <img class="advantages__image" src="img/icon-burger.svg" alt="burger" width="40" height="35">
           <h3 class="advantages__title">Еда</h3>
           <p class="advantages__description">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
         </div>
@@ -126,8 +145,13 @@
         </p>
       </div>
       <div class="feature-banner__picture">
-        <img class="feature-banner__image" src="https://via.placeholder.com/280x230" alt="devil's bridge" width="280"
-          height="230">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+          <img class="feature-banner__image" src="img/photo-bridge-mobile.jpg"
+            srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="devil's bridge" width="280" height="230">
+        </picture>
       </div>
     </section>
 
@@ -164,9 +188,16 @@
         <button class="search-hotel__button button" type="button">Найти гостиницу</button>
       </div>
       <div class="search-hotel__map">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="search-hotel__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Map Sedona"
+            width="320" height="350">
+        </picture>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565774556!2d-111.83015785957862!3d34.8544438152782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1605375844452!5m2!1sru!2sru"
-          style="border:0;width:100%;height:100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          style="border:0;width:100%;height:100%;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
       </div>
     </section>
   </main>
@@ -177,16 +208,19 @@
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--tw" href="https://twitter.com/" target="_blank">
           <span class="visually-hidden">Седона в twitter</span>
+          <img class="socials-list__image" src="img/icon-twitter.svg" alt="icon-twitter" width="17" height="14">
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--fb" href="https://www.facebook.com/" target="_blank">
           <span class="visually-hidden">Седона в facebook</span>
+          <img class="socials-list__image" src="img/icon-facebook.svg" alt="icon-facebook" width="9" height="19">
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--youtube" href="https://www.youtube.com/" target="_blank">
           <span class="visually-hidden">Седона в youtube</span>
+          <img class="socials-list__image" src="img/icon-youtube.svg" alt="icon-youtube" width="20" height="14">
         </a>
       </li>
     </ul>

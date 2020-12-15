@@ -20,19 +20,19 @@
 
       @media (width: 320px) {
         html {
-          background-image: url("img/catalog-mobile.png");
+          background-image: url("img/catalog-mobile.jpg");
         }
       }
 
       @media (width: 768px) {
         html {
-          background-image: url("img/catalog-tablet.png");
+          background-image: url("img/catalog-tablet.jpg");
         }
       }
 
       @media (width: 1280px) {
         html {
-          background-image: url("img/catalog-desktop.png");
+          background-image: url("img/catalog-desktop.jpg");
         }
       }
 
@@ -60,7 +60,10 @@
       </ul>
     </nav>
     <a class="page-header__logo logo" href="index.html">
-      <img src="https://via.placeholder.com/100x85" alt="city of sedona" width="100" height="85">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="100" height="85" alt="city of sedona">
+      </picture>
     </a>
   </header>
 
@@ -173,16 +176,19 @@
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--tw" href="https://twitter.com/" target="_blank">
           <span class="visually-hidden">Седона в twitter</span>
+          <img class="socials-list__image" src="img/icon-twitter.svg" alt="icon-twitter" width="17" height="14">
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--fb" href="https://www.facebook.com/" target="_blank">
           <span class="visually-hidden">Седона в facebook</span>
+          <img class="socials-list__image" src="img/icon-facebook.svg" alt="icon-facebook" width="9" height="19">
         </a>
       </li>
       <li class="socials-list__item">
         <a class="socials-list__link socials-list__link--youtube" href="https://www.youtube.com/" target="_blank">
           <span class="visually-hidden">Седона в youtube</span>
+          <img class="socials-list__image" src="img/icon-youtube.svg" alt="icon-youtube" width="20" height="14">
         </a>
       </li>
     </ul>
