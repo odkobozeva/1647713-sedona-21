@@ -68,6 +68,7 @@
     <a class="page-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="100" height="85" alt="city of sedona">
       </picture>
     </a>
@@ -77,8 +78,21 @@
 
     <section class="hero hero--small">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
-      <img class="hero__background" src="https://via.placeholder.com/320x400" alt="canyon view" width="320"
-        height="400">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+        <img class="hero__background  hero__background--bottom" src="img/back-mobile.jpg"
+          srcset="img/back-mobile@2x.jpg 2x" alt="canyon view" width="320" height="400">
+      </picture>
+
+      <img class="hero__background-text hero__background-text--small" src="img/hero-small-text.svg" alt="Sedona"
+        width="229" height="39">
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
+        <img class="hero__triangle" src="img/intro-triangle.svg" alt="Triangle" width="320" height="57">
+      </picture>
     </section>
 
     <section class="reviews">

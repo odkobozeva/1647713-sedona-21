@@ -10,37 +10,37 @@
 
 <body class="page__body">
 
-    <!-- Стили для проверки Pixel Perfect. Начало -->
-    <style>
+  <!-- Стили для проверки Pixel Perfect. Начало -->
+  <style>
+    html {
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @media (width: 320px) {
       html {
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url("img/catalog-mobile.jpg");
       }
+    }
 
-      @media (width: 320px) {
-        html {
-          background-image: url("img/catalog-mobile.jpg");
-        }
+    @media (width: 768px) {
+      html {
+        background-image: url("img/catalog-tablet.jpg");
       }
+    }
 
-      @media (width: 768px) {
-        html {
-          background-image: url("img/catalog-tablet.jpg");
-        }
+    @media (width: 1280px) {
+      html {
+        background-image: url("img/catalog-desktop.jpg");
       }
+    }
 
-      @media (width: 1280px) {
-        html {
-          background-image: url("img/catalog-desktop.jpg");
-        }
-      }
-
-      body {
-        opacity: 1;
-      }
-    </style>
-    <!-- Стили для проверки Pixel Perfect. Конец -->
+    body {
+      opacity: 1;
+    }
+  </style>
+  <!-- Стили для проверки Pixel Perfect. Конец -->
   <header class="page-header page-header--opened">
     <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
@@ -62,6 +62,7 @@
     <a class="page-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="100" height="85" alt="city of sedona">
       </picture>
     </a>
@@ -79,7 +80,8 @@
       <div class="gallery__info text-info">
         <h2 class="gallery__title text-info__title">Фото и видео</h2>
         <p class="gallery__description text-info__description">Не можете решиться на путешествие из-за курса?
-          <br>Фотографии помогут вам забыть о политике и экономике.</p>
+          <br>Фотографии помогут вам забыть о политике и экономике.
+        </p>
       </div>
 
       <figure class="card-gallery gallery__item gallery__item--wide">

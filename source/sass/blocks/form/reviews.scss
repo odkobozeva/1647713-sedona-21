@@ -14,12 +14,12 @@
   border-bottom: 1px solid $decoration-line;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 67px;
+    padding: 62px 40px 67px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 111px 40px 39px;
+    padding: 111px 40px 40px;
   }
 
   br {
@@ -311,7 +311,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding: 53px 0 62px;
+    padding: 53px 0 67px;
     align-items: baseline;
     justify-content: space-between;
   }
