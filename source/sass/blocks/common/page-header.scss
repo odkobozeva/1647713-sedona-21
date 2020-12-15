@@ -62,11 +62,18 @@
 .page-header__logo {
   justify-self: center;
   align-self: start;
-  border: 1px solid;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1 / -1;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+  }
+}
+
+.page-header__logo-image {
+  width: 100%;
 }
