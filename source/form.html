@@ -68,6 +68,7 @@
     <a class="page-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="100" height="85" alt="city of sedona">
       </picture>
     </a>
@@ -77,8 +78,21 @@
 
     <section class="hero hero--small">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
-      <img class="hero__background" src="https://via.placeholder.com/320x400" alt="canyon view" width="320"
-        height="400">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+        <img class="hero__background  hero__background--bottom" src="img/back-mobile.jpg"
+          srcset="img/back-mobile@2x.jpg 2x" alt="canyon view" width="320" height="400">
+      </picture>
+
+      <img class="hero__background-text hero__background-text--small" src="img/hero-small-text.svg" alt="Sedona"
+        width="229" height="39">
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
+        <img class="hero__triangle" src="img/intro-triangle.svg" alt="Triangle" width="320" height="57">
+      </picture>
     </section>
 
     <section class="reviews">
@@ -140,13 +154,12 @@
         </fieldset>
 
         <fieldset class="form__fieldset reviews__fieldset reviews__fieldset--impression">
-          <legend class="legend reviews__legend reviews__legend--left">Ваше общее впечатление:</legend>
+          <legend class="legend reviews__legend">Ваше общее впечатление:</legend>
 
           <ul class="fields-list reviews__fields-list reviews__fields-list--radiobutton">
             <li>
               <label class="radio-field reviews__radio-field">
                 <input class="radio-field__input" type="radio" name="impression" value="positive" checked>
-                <span class="radio-field__input-choice"></span>
                 <span class="radio-field__label">Скорее положительное</span>
               </label>
             </li>
@@ -154,7 +167,6 @@
             <li>
               <label class="radio-field reviews__radio-field">
                 <input class="radio-field__input" type="radio" name="impression" value="negative">
-                <span class="radio-field__input-choice"></span>
                 <span class="radio-field__label">Скорее отрицательное</span>
               </label>
             </li>
@@ -162,7 +174,6 @@
             <li>
               <label class="radio-field reviews__radio-field">
                 <input class="radio-field__input" type="radio" name="impression" value="neutral">
-                <span class="radio-field__input-choice"></span>
                 <span class="radio-field__label">Затрудняюсь ответить</span>
               </label>
             </li>
@@ -176,7 +187,6 @@
             <li>
               <label class="checkbox-field reviews__checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="devils_bridge" checked>
-                <span class="checkbox-field__input-choice"></span>
                 <span class="checkbox-field__label">Мост Дьявола</span>
               </label>
             </li>
@@ -184,7 +194,6 @@
             <li>
               <label class="checkbox-field reviews__checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="mount_bell" checked>
-                <span class="checkbox-field__input-choice"></span>
                 <span class="checkbox-field__label">Гора-Колокол</span>
               </label>
             </li>
@@ -192,7 +201,6 @@
             <li>
               <label class="checkbox-field reviews__checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="slide_park" checked>
-                <span class="checkbox-field__input-choice"></span>
                 <span class="checkbox-field__label">Слайд-парк</span>
               </label>
             </li>
@@ -200,7 +208,6 @@
             <li>
               <label class="checkbox-field reviews__checkbox-field">
                 <input class="checkbox-field__input" type="checkbox" name="red_rocks">
-                <span class="checkbox-field__input-choice"></span>
                 <span class="checkbox-field__label">Красные скалы</span>
               </label>
             </li>
@@ -227,8 +234,8 @@
 
   <div class="popup popup-reviews popup-reviews--success">
     <p class="popup__title popup-reviews__title">Ваш отзыв отправлен!</p>
-    <p class="popup__description popup-reviews__description popup-reviews__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к
-      нам.<br>В ближайшее время мы опубликуем его на сайте.
+    <p class="popup__description popup-reviews__description popup-reviews__description--success">Спасибо за ваше
+      участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.
     </p>
     <div class="popup__button-wrapper popup-reviews__button-wrapper popup-reviews__button-wrapper--success">
       <button class="popup__button popup-reviews__button button" type="button">Закрыть окно</button>
@@ -236,8 +243,8 @@
   </div>
   <div class="popup popup-reviews popup-reviews--error">
     <p class="popup__title popup-reviews__title">Что-то пошло <br>не так!</p>
-    <p class="popup__description popup-reviews__description popup-reviews__description--error">Проверьте поля, выделенные красным, скорее всего вы
-      забыли их заполнить
+    <p class="popup__description popup-reviews__description popup-reviews__description--error">Проверьте поля,
+      выделенные красным, скорее всего вы забыли их заполнить
     </p>
     <div class="popup__button-wrapper popup-reviews__button-wrapper popup-reviews__button-wrapper--error">
       <button class="popup__button popup-reviews__button button" type="button">Ок</button>

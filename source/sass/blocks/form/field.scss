@@ -9,10 +9,6 @@
   text-transform: uppercase;
   color: $secondary-text;
 
-  &:hover .field__input-choice {
-    background-color: $input--hover;
-  }
-
   &--contacts {
     padding-left: 22px;
 
