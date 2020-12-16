@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -72,8 +73,21 @@
 
     <section class="hero hero--small">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
-      <img class="hero__background" src="https://via.placeholder.com/320x400" alt="canyon view" width="320"
-        height="400">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
+        <img class="hero__background  hero__background--bottom" src="img/back-mobile.jpg"
+          srcset="img/back-mobile@2x.jpg 2x" alt="canyon view" width="320" height="400">
+      </picture>
+
+      <img class="hero__background-text hero__background-text--small" src="img/hero-small-text.svg" alt="Sedona"
+        width="229" height="39">
+
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
+        <img class="hero__triangle" src="img/intro-triangle.svg" alt="Triangle" width="320" height="57">
+      </picture>
     </section>
 
     <section class="gallery">
@@ -86,8 +100,11 @@
 
       <figure class="card-gallery gallery__item gallery__item--wide">
         <a class="card-gallery__link card-gallery__link--wide" href="#!">
-          <img class="card-gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-            alt="On the road to Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="On the road to Sedona" width="280" height="280">
+          </picture>
         </a>
         <figcaption class="card-gallery__info">
           <div class="card-gallery__wrapper">
@@ -102,8 +119,11 @@
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
-          <img class="card-gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-            alt="Local flora">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Local flora" width="280" height="280">
+          </picture>
         </a>
         <figcaption class="card-gallery__info">
           <div class="card-gallery__wrapper">
@@ -118,8 +138,11 @@
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
-          <img class="card-gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-            alt="Serpentine road">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Serpentine road" width="280" height="280">
+          </picture>
         </a>
         <figcaption class="card-gallery__info">
           <div class="card-gallery__wrapper">
@@ -134,8 +157,11 @@
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
-          <img class="card-gallery__image" src="https://via.placeholder.com/280x280" width="280" height="280"
-            alt="Devil's bridge trail">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Devil's bridge trail" width="280" height="280">
+          </picture>
         </a>
         <figcaption class="card-gallery__info">
           <div class="card-gallery__wrapper">
@@ -158,7 +184,7 @@
 
       <div class="video-presentation__item video">
         <div class="video__player">
-          <video class="video__frame" poster="https://via.placeholder.com/320x200" width="320" height="200"></video>
+          <video class="video__frame" poster="img/video-poster.jpg" width="320" height="200"></video>
         </div>
         <div class="video__controls">
           <button class="video__button video__button--replay"></button>
