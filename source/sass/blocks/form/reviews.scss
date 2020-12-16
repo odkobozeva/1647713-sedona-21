@@ -246,13 +246,6 @@
   }
 }
 
-.reviews__radio-field,
-.reviews__checkbox-field {
-  &:hover .checkbox-field__input-choice {
-    background-color: $input--hover;
-  }
-}
-
 .reviews__textarea-field {
   margin-top: 13px;
 

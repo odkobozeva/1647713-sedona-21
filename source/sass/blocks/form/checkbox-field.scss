@@ -44,4 +44,8 @@
       margin-right: 25px;
     }
   }
+
+  &:hover::before {
+    background-color: $input--hover;
+  }
 }
