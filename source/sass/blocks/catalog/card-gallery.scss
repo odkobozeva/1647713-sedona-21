@@ -1,19 +1,31 @@
 .card-gallery__link {
+  position: relative;
   display: block;
-  height: 280px;
+  padding-bottom: 100%;
 
   @media (min-width: $tablet-width) {
-    height: 267px;
+    padding-bottom: 82.4%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 66.75%;
   }
 
   &--wide {
     @media (min-width: $tablet-width) {
-      height: 400px;
+      padding-bottom: 61.73%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 33.33%;
     }
   }
 }
 
 .card-gallery__image {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

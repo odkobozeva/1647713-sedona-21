@@ -1,7 +1,6 @@
 .gallery {
-  display: grid;
-
   @media (min-width: $tablet-width) {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 60px;
   }
@@ -21,11 +20,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    padding: 59px 20px 78px;
+    padding: 61px 20px 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 20px 80px;
+    padding: 101px 20px 80px;
   }
 }
 
