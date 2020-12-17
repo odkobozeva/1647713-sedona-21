@@ -1,13 +1,13 @@
 .video__preview {
   position: relative;
-  padding: 31.41%;
+  padding-bottom: 62.81%;
 
   @media (min-width: $tablet-width) {
-    padding: 38.58%;
+    padding-bottom: 77.16%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 31.25%;
+    padding-bottom: 62.5%;
   }
 }
 

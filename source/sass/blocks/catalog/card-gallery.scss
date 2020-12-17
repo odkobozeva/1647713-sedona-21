@@ -1,23 +1,23 @@
 .card-gallery__link {
   position: relative;
   display: block;
-  padding: 50%;
+  padding-bottom: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 41.2%;
+    padding-bottom: 82.4%;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 33.38%;
+    padding-bottom: 66.75%;
   }
 
   &--wide {
     @media (min-width: $tablet-width) {
-      padding: 30.86%;
+      padding-bottom: 61.73%;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 16.67%;
+      padding-bottom: 33.33%;
     }
   }
 }
