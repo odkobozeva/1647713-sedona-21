@@ -103,7 +103,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="On the road to Sedona" width="280" height="280">
+            <img class="card-gallery__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+              alt="On the road to Sedona" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -122,7 +123,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Local flora" width="280" height="280">
+            <img class="card-gallery__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+              alt="Local flora" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -141,7 +143,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Serpentine road" width="280" height="280">
+            <img class="card-gallery__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+              alt="Serpentine road" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -160,7 +163,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Devil's bridge trail" width="280" height="280">
+            <img class="card-gallery__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+              alt="Devil's bridge trail" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -183,9 +187,16 @@
       </div>
 
       <div class="video-presentation__item video">
-        <div class="video__player">
-          <video class="video__frame" poster="img/video-poster.jpg" width="320" height="200"></video>
+        <div class="video__preview">
+          <!-- <video class="video__frame" poster="img/video-poster.jpg" width="320" height="200"></video> -->
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__preview-image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x"
+              alt="Video poster" width="280" height="280">
+          </picture>
         </div>
+
         <div class="video__controls">
           <button class="video__button video__button--replay"></button>
           <div class="video__volume-bar"></div>

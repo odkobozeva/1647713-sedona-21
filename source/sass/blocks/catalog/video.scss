@@ -1,14 +1,20 @@
-.video__player {
+.video__preview {
   position: relative;
-  height: 200px;
+  padding: 31.41%;
 
   @media (min-width: $tablet-width) {
-    height: 500px;
+    padding: 38.58%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 31.25%;
   }
 }
 
-.video__frame {
+.video__preview-image {
   position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

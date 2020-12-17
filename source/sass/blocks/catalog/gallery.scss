@@ -1,8 +1,4 @@
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
