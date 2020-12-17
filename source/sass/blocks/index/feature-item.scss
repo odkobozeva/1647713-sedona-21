@@ -11,7 +11,7 @@
   }
 
   &--highlight {
-    padding: 39px 5px 35px;
+    padding: 38px 15px 36px;
     background-color: $background-highlight;
 
     @media (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
 
   &--decorate {
     position: relative;
-    padding: 71px 5px 39px;
+    padding: 71px 14px 39px;
 
     @media (min-width: $tablet-width) {
       padding: 40px 20px;
@@ -53,7 +53,7 @@
 }
 
 .feature-item__title {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
@@ -77,6 +77,7 @@
 
 .feature-item__number {
   position: relative;
+  line-height: 1.5;
 
   &::before,
   &::after {
@@ -109,10 +110,14 @@
 }
 
 .feature-item__description {
-  margin-top: 20px;
+  margin-top: 17px;
   line-height: 1.5;
   color: $secondary-text;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 24px;
+  }
 
   &--light-text {
     color: $light-text;
@@ -122,9 +127,5 @@
     @media (max-width: $mobile-width-only) {
       display: none;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 27px;
   }
 }
