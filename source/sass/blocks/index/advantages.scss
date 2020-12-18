@@ -41,9 +41,10 @@
   }
 }
 
-.advantages__image {
+.advantages__icon {
   width: 40px;
   height: 40px;
+  fill: $icon-color;
 
   @media (min-width: $tablet-width) {
     width: 78px;

@@ -9,12 +9,6 @@
       grid-template-columns: 2fr 1fr;
     }
   }
-
-  &--image-left .feature-banner__picture {
-    @media (min-width: $tablet-width) {
-      order: -1;
-    }
-  }
 }
 
 .feature-banner__picture {
@@ -22,6 +16,12 @@
 
   @media (min-width: $tablet-width) {
     height: 256px;
+  }
+
+  &--image-left {
+    @media (min-width: $tablet-width) {
+      order: -1;
+    }
   }
 }
 
