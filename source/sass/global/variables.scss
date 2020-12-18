@@ -3,7 +3,9 @@ $primary-text: #000000;
 $secondary-text: #333333;
 $light-text: #ffffff;
 $menu-text--hover: #81b3d2;
+$menu-text--down: rgba($primary-text, 0.3);
 $menu-text--active: #766357;
+$menu-text--active-hover: #604e43;
 $button-text--active: rgba($light-text, 0.3);
 
 // Colors background
@@ -25,11 +27,15 @@ $button-background--disabled: #e5e5e5;
 //Colors icon
 $icon-color: #81b3d2;
 $icon-light: #ffffff;
+$icon-hover: #669ec0;
+$icon-active: #5496bd;
 
 // Colors input
 $input-background: #f2f2f2;
 $input--checked: #333333;
 $input--hover:#e5e5e5;
+$input--active:#d5d5d5;
+$input--disabled:#a4a4a4;
 
 $decoration-line: #e5e5e5;
 $decoration-line-dark: #d6d6d6;

@@ -7,7 +7,19 @@
   display: block;
   width: 46px;
   height: 48px;
-  background: $background-highlight;
+  background: $button-background;
+
+  &:hover {
+    background-color: $button-background--hover;
+  }
+
+  &:active {
+    background-color: $button-background--active;
+  }
+
+  &:active .socials-list__icon {
+    fill: $button-text--active;
+  }
 }
 
 .socials-list__icon {
