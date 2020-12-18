@@ -51,7 +51,16 @@
     color: $menu-text--active;
 
     @media (min-width: $tablet-width) {
+      color: $menu-text--active-hover;
       background-color: transparent;
+    }
+  }
+
+  &:active .site-list__link {
+    color: $menu-text--down;
+
+    @media (max-width: $mobile-width-only) {
+      background-color: $menu-background--active;
     }
   }
 }

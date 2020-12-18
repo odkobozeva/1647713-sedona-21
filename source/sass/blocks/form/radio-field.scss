@@ -22,6 +22,10 @@
     border-radius: 50%;
     background-color: $input--checked;
   }
+
+  &:checked + .radio-field__label:active::after {
+    background-color: $input--disabled;
+  }
 }
 
 .radio-field__label {
@@ -48,5 +52,9 @@
 
   &:hover::before {
     background-color: $input--hover;
+  }
+
+  &:active::before {
+    background-color: $input--active;
   }
 }
