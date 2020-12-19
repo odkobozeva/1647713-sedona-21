@@ -74,9 +74,14 @@
     <section class="hero hero--small">
       <h1 class="visually-hidden">Sedona — welcome to the gorgeous</h1>
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)"
+          srcset="img/back-desktop.webp 1x, img/back-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+          srcset="img/back-tablet.webp 1x, img/back-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/back-mobile.webp 1x, img/back-mobile@2x.webp 2x">
         <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg 1x, img/back-desktop@2x.jpg 2x">
         <source media="(min-width: 768px)" srcset="img/back-tablet.jpg 1x, img/back-tablet@2x.jpg 2x">
-        <img class="hero__background  hero__background--bottom" src="img/back-mobile.jpg"
+        <img class="hero__background hero__background--bottom" src="img/back-mobile.jpg"
           srcset="img/back-mobile@2x.jpg 2x" alt="canyon view" width="320" height="400">
       </picture>
 
@@ -101,10 +106,18 @@
       <figure class="card-gallery gallery__item gallery__item--wide">
         <a class="card-gallery__link card-gallery__link--wide" href="#!">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile@2x.jpg 2x"
-              alt="On the road to Sedona" width="280" height="280">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-1-desktop.webp 1x, img/catalog/photo-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-1-tablet.webp 1x, img/catalog/photo-1-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog/photo-1-mobile.webp 1x, img/catalog/photo-1-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-1-desktop.jpg 1x, img/catalog/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-1-tablet.jpg 1x, img/catalog/photo-1-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/catalog/photo-1-mobile.jpg"
+              srcset="img/catalog/photo-1-mobile@2x.jpg 2x" alt="On the road to Sedona" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -112,19 +125,30 @@
             <h3 class="card-gallery__title">Неродные просторы</h3>
             <p class="card-gallery__autor">Автор фото: Борис</p>
           </div>
-          <p class="card-gallery__like">
-            <button class="card-gallery__like-button" type="button">1350</button>
-          </p>
+          <button class="card-gallery__button" type="button">
+            <svg class="card-gallery__icon" width="23" height="21">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+            <span>1350</span>
+          </button>
         </figcaption>
       </figure>
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile@2x.jpg 2x"
-              alt="Local flora" width="280" height="280">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-2-desktop.webp 1x, img/catalog/photo-2-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-2-tablet.webp 1x, img/catalog/photo-2-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog/photo-2-mobile.webp 1x, img/catalog/photo-2-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-2-desktop.jpg 1x, img/catalog/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-2-tablet.jpg 1x, img/catalog/photo-2-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/catalog/photo-2-mobile.jpg"
+              srcset="img/catalog/photo-2-mobile@2x.jpg 2x" alt="Local flora" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -132,19 +156,30 @@
             <h3 class="card-gallery__title">Местная растительность</h3>
             <p class="card-gallery__autor">Автор фото: Сергей</p>
           </div>
-          <p class="card-gallery__like">
-            <button class="card-gallery__like-button" type="button">143</button>
-          </p>
+          <button class="card-gallery__button" type="button">
+            <svg class="card-gallery__icon" width="23" height="21">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+            <span>143</span>
+          </button>
         </figcaption>
       </figure>
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile@2x.jpg 2x"
-              alt="Serpentine road" width="280" height="280">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-3-desktop.webp 1x, img/catalog/photo-3-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-3-tablet.webp 1x, img/catalog/photo-3-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog/photo-3-mobile.webp 1x, img/catalog/photo-3-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-3-desktop.jpg 1x, img/catalog/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-3-tablet.jpg 1x, img/catalog/photo-3-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/catalog/photo-3-mobile.jpg"
+              srcset="img/catalog/photo-3-mobile@2x.jpg 2x" alt="Serpentine road" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -152,19 +187,31 @@
             <h3 class="card-gallery__title">Дорога на север</h3>
             <p class="card-gallery__autor">Автор фото: Петр</p>
           </div>
-          <p class="card-gallery__like">
-            <button class="card-gallery__like-button" type="button">96</button>
-          </p>
+
+          <button class="card-gallery__button" type="button">
+            <svg class="card-gallery__icon" width="23" height="21">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+            <span>96</span>
+          </button>
         </figcaption>
       </figure>
 
       <figure class="gallery__item card-gallery">
         <a class="card-gallery__link" href="#!">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
-            <img class="card-gallery__image" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile@2x.jpg 2x"
-              alt="Devil's bridge trail" width="280" height="280">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/photo-4-desktop.webp 1x, img/catalog/photo-4-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/photo-4-tablet.webp 1x, img/catalog/photo-4-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/catalog/photo-4-mobile.webp 1x, img/catalog/photo-4-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/photo-4-desktop.jpg 1x, img/catalog/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/photo-4-tablet.jpg 1x, img/catalog/photo-4-tablet@2x.jpg 2x">
+            <img class="card-gallery__image" src="img/catalog/photo-4-mobile.jpg"
+              srcset="img/catalog/photo-4-mobile@2x.jpg 2x" alt="Devil's bridge trail" width="280" height="280">
           </picture>
         </a>
         <figcaption class="card-gallery__info">
@@ -172,9 +219,12 @@
             <h3 class="card-gallery__title">Мост Дьявола</h3>
             <p class="card-gallery__autor">Автор фото: Антон</p>
           </div>
-          <p class="card-gallery__like">
-            <button class="card-gallery__like-button" type="button">254</button>
-          </p>
+          <button class="card-gallery__button" type="button">
+            <svg class="card-gallery__icon" width="23" height="21">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+            <span>254</span>
+          </button>
         </figcaption>
       </figure>
     </section>
@@ -183,26 +233,46 @@
       <div class="video-presentation__info text-info">
         <h2 class="video-presentation__title text-info__title">Все еще сомневаетесь?</h2>
         <p class="video-presentation__description text-info__description">Смотрите видеопрезентацию и скорее за
-          билетами, пока они <br>не подорожали в очередной раз!</p>
+          билетами, пока они <br>не подорожали в очередной раз!
+        </p>
       </div>
 
       <div class="video-presentation__item video">
         <div class="video__preview">
           <!-- <video class="video__frame" poster="img/video-poster.jpg" width="320" height="200"></video> -->
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
-            <img class="video__preview-image" src="img/catalog/video-mobile.jpg" srcset="img/catalog/video-mobile@2x.jpg 2x"
-              alt="Video poster" width="280" height="280">
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/catalog/video-desktop.webp 1x, img/catalog/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/catalog/video-tablet.webp 1x, img/catalog/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/catalog/video-mobile.webp 1x, img/catalog/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog/video-desktop.jpg 1x, img/catalog/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
+            <img class="video__preview-image" src="img/catalog/video-mobile.jpg"
+              srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Video poster" width="280" height="280">
           </picture>
         </div>
 
         <div class="video__controls">
-          <button class="video__button video__button--replay"></button>
+          <button class="video__button video__button--replay">
+            <svg class="video__button-icon" width="16" height="20">
+              <use xlink:href="img/sprite.svg#icon-replay"></use>
+            </svg>
+          </button>
           <div class="video__volume-bar"></div>
           <div class="video__button-group">
-            <button class="video__button video__button--subtitles"></button>
-            <button class="video__button video__button--fullscreen"></button>
+            <button class="video__button video__button--subtitles">
+              <svg class="video__button-icon" width="32" height="30">
+                <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+              </svg>
+            </button>
+            <button class="video__button video__button--fullscreen">
+              <svg class="video__button-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
