@@ -101,7 +101,6 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  border: 1px solid;
 
   &--subtitles {
     width: 32px;
@@ -111,11 +110,35 @@
     margin: 0 0 0 30px;
 
     @media (min-width: $tablet-width) {
-      margin: 0 5px 0 30px;
+      margin: 0 7px 0 30px;
     }
   }
 }
 
 .video__button-group {
   display: flex;
+}
+
+.video__button-icon {
+  fill: $icon-dark;
+
+  @media (min-width: $tablet-width) {
+    fill: $icon-light;
+  }
+
+  &:hover {
+    fill: $icon-controls--hover;
+
+    @media (min-width: $tablet-width) {
+      fill: $icon-controls-tablet--hover;
+    }
+  }
+
+  &:active {
+    fill: $icon-controls--active;
+
+    @media (min-width: $tablet-width) {
+      fill: $icon-controls-tablet--active;
+    }
+  }
 }

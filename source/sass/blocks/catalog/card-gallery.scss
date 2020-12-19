@@ -1,7 +1,8 @@
 .card-gallery__link {
   position: relative;
   display: block;
-  padding-bottom: 100%;
+  min-height: 280px;
+  padding-bottom: 56%;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 82.4%;
@@ -39,8 +40,6 @@
     padding: 17px 20px;
     background-color: $card-gallery-background-light;
     grid-template-columns: auto minmax(65px, max-content);
-    align-items: center;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +53,7 @@
 
 .card-gallery__wrapper {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,32 +82,31 @@
   }
 }
 
-.card-gallery__like-button {
-  position: relative;
-  padding-left: 37px;
+.card-gallery__button {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.71;
-  background-color: transparent;
+  text-align: left;
   cursor: pointer;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 32px;
-  }
 
   @media (min-width: $desktop-width) {
     color: $light-text;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 23px;
-    height: 23px;
-    margin: auto;
-    border: 1px solid;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.card-gallery__icon {
+  margin-right: 10px;
+  fill: $icon-like-light;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    fill: $icon-light;
   }
 }

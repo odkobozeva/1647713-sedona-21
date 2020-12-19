@@ -27,8 +27,12 @@ $button-background--disabled: #e5e5e5;
 //Colors icon
 $icon-color: #81b3d2;
 $icon-light: #ffffff;
-$icon-hover: #669ec0;
-$icon-active: #5496bd;
+$icon-dark: #5c6870;
+$icon-like-light: rgba(0, 0, 0, 0.3);
+$icon-controls--hover: #333333;
+$icon-controls--active: rgba($icon-controls--hover, 0.3);
+$icon-controls-tablet--hover: rgba($icon-light, 0.6);
+$icon-controls-tablet--active:  rgba($icon-light, 0.3);
 
 // Colors input
 $input-background: #f2f2f2;
