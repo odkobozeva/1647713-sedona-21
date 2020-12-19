@@ -21,6 +21,10 @@
     border-bottom: 3px solid $input--checked;
     transform: rotate(-45deg);
   }
+
+  &:checked + .checkbox-field__label:active::after {
+    border-color: $input--disabled;
+  }
 }
 
 .checkbox-field__label {
@@ -47,5 +51,9 @@
 
   &:hover::before {
     background-color: $input--hover;
+  }
+
+  &:active::before {
+    background-color: $input--active;
   }
 }
