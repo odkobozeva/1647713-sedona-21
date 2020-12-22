@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   top: 50%;
+  margin: 0 auto;
   transform: translateY(-50%);
   background-color: $body-background;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -11,12 +12,10 @@
 
   &--error {
     max-width: 400px;
-    margin: 0 auto;
   }
 
   &--success {
     max-width: 640px;
-    margin: 0 auto;
   }
 }
 

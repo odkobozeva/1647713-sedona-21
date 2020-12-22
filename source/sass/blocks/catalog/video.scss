@@ -1,6 +1,7 @@
 .video__preview {
   position: relative;
   padding-bottom: 62.81%;
+  background-color: $catalog-image-background;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 77.16%;
@@ -120,7 +121,7 @@
 }
 
 .video__button-icon {
-  fill: $icon-dark;
+  fill: $icon-controls-dark;
 
   @media (min-width: $tablet-width) {
     fill: $icon-light;

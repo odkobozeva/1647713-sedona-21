@@ -39,6 +39,7 @@
 
   &::before {
     content: "";
+    flex-shrink: 0;
     width: 56px;
     height: 56px;
     margin-right: 22px;
