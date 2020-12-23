@@ -14,7 +14,9 @@
     content: "";
     position: absolute;
     left: 20px;
-    top: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     width: 20px;
     height: 12px;
     border-left: 3px solid $input--checked;
@@ -38,6 +40,7 @@
 
   &::before {
     content: "";
+    flex-shrink: 0;
     width: 56px;
     height: 56px;
     margin-right: 22px;

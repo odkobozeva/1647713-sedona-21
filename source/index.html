@@ -4,48 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="page__body">
 
-  <!-- Стили для проверки Pixel Perfect. Начало -->
-  <style>
-    html {
-      background-position: center top;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    @media (width: 320px) {
-      html {
-        background-image: url("img/Mobile.jpg");
-      }
-    }
-
-    @media (width: 768px) {
-      html {
-        background-image: url("img/Tablet.jpg");
-      }
-    }
-
-    @media (width: 1280px) {
-      html {
-        background-image: url("img/Desktop.jpg");
-      }
-    }
-
-    body {
-      opacity: 1;
-    }
-  </style>
-  <!-- Стили для проверки Pixel Perfect. Конец -->
-
-  <header class="page-header page-header--opened">
-    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-nav">
+  <header class="page-header page-header--nojs">
+    <button class="page-header__toggle button" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav main-nav--closed">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link">Главная</a>
@@ -89,11 +57,6 @@
       <img class="hero__background-text hero__background-text--large" src="img/hero-text.svg"
         alt="Welcome to the gorgeous Sedona" width="282" height="214">
 
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/intro-triangle-desktop.svg">
-        <source media="(min-width: 768px)" srcset="img/intro-triangle-tablet.svg">
-        <img class="hero__triangle" src="img/intro-triangle.svg" alt="Triangle" width="320" height="57">
-      </picture>
     </section>
 
     <section class="feature-info text-info">
@@ -107,7 +70,7 @@
 
     <section class="feature-banner">
       <div class="feature-banner__info feature-item feature-item--highlight feature-item--decorate">
-        <h3 class="feature-item__title feature-item__title--light-text">Настоящий <br>городок</h3>
+        <h3 class="feature-item__title feature-item__title--light-text">Настоящий&nbsp;<br>городок</h3>
         <span class="feature-item__number feature-item__number--light-text">№1</span>
         <p class="feature-item__description feature-item__description--light-text">Седона не аттракцион для туристов,
           там течет своя жизнь
@@ -153,14 +116,14 @@
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
           <h3 class="advantages__title">Еда</h3>
-          <p class="advantages__description">Всегда заказывайте фирменный бургер, <br>вы не разочаруетесь!</p>
+          <p class="advantages__description">Всегда заказывайте фирменный бургер,&nbsp;<br>вы не разочаруетесь!</p>
         </div>
       </div>
     </section>
 
     <section class="feature-banner feature-banner--image-left">
       <div class="feature-banner__info feature-item feature-item--highlight">
-        <h3 class="feature-item__title feature-item__title--light-text">Там есть <br>Мост Дьявола</h3>
+        <h3 class="feature-item__title feature-item__title--light-text">Там есть&nbsp;<br>Мост Дьявола</h3>
         <span class="feature-item__number feature-item__number--light-text">№2</span>
         <p class="feature-item__description feature-item__description--light-text">Да, по нему можно пройти! Если вы
           осмелитесь, конечно
@@ -187,22 +150,22 @@
     <section class="features">
       <div class="features__list">
         <div class="feature-item">
-          <h3 class="feature-item__title">Небольшая <br>площадь</h3>
+          <h3 class="feature-item__title">Небольшая&nbsp;<br>площадь</h3>
           <span class="feature-item__number">№3</span>
           <p class="feature-item__description">Все интересные места находятся очень близко</p>
         </div>
         <div class="feature-item">
-          <h3 class="feature-item__title">Красивая <br>дорога</h3>
+          <h3 class="feature-item__title">Красивая&nbsp;<br>дорога</h3>
           <span class="feature-item__number">№4</span>
-          <p class="feature-item__description">Ехать в седону из <span class="text-no-wrap">Лас-Вегаса</span> совсем
-            <br>не скучно!
+          <p class="feature-item__description">Ехать в седону из <span class="text-no-wrap">Лас-Вегаса</span>
+            совсем&nbsp;<br>не скучно!
           </p>
         </div>
         <div class="feature-item">
-          <h3 class="feature-item__title">Мало <br>туристов</h3>
+          <h3 class="feature-item__title">Мало&nbsp;<br>туристов</h3>
           <span class="feature-item__number">№5</span>
-          <p class="feature-item__description">Большинство едет в <span class="text-no-wrap">Гранд-Каньон</span> и
-            <br>толпится там
+          <p class="feature-item__description">Большинство едет в <span class="text-no-wrap">Гранд Каньон</span>
+            и&nbsp;<br>толпится там
           </p>
         </div>
       </div>
@@ -211,10 +174,10 @@
     <section class="search-hotel">
       <div class="search-hotel__wrapper">
         <h3 class="search-hotel__title">Заинтересовались?</h3>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки,&nbsp;<br>и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <button class="search-hotel__button button" type="button">Найти гостиницу</button>
+        <a class="search-hotel__button button" href="#!">Найти гостиницу</a>
       </div>
       <div class="search-hotel__map">
         <picture>
@@ -241,24 +204,24 @@
     <p class="page-footer__hashtag">#visitsedona</p>
     <ul class="page-footer__socials-list socials-list">
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://twitter.com/" target="_blank">
-          <span class="visually-hidden">Седона в twitter</span>
+        <a class="socials-list__link" href="https://twitter.com/htmlacademy_ru" target="_blank"
+          aria-label="Седона в twitter">
           <svg class="socials-list__icon" width="18" height="15">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://www.facebook.com/" target="_blank">
-          <span class="visually-hidden">Седона в facebook</span>
+        <a class="socials-list__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+          aria-label="Седона в facebook">
           <svg class="socials-list__icon" width="9" height="19">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://www.youtube.com/" target="_blank">
-          <span class="visually-hidden">Седона в youtube</span>
+        <a class="socials-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+          aria-label="Седона в youtube">
           <svg class="socials-list__icon" width="20" height="14">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
@@ -266,12 +229,17 @@
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+        aria-label="Перейти на сайт HTML Academy">
         <p class="copyright__text">Разработано</p>
-        <img class="copyright-logo" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="35">
+        <svg class="copyright__logo copyright-logo" width="27" height="35">
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+        </svg>
       </a>
     </div>
   </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

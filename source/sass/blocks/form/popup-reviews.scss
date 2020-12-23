@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   top: 50%;
+  margin: 0 auto;
   transform: translateY(-50%);
   background-color: $body-background;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -11,12 +12,10 @@
 
   &--error {
     max-width: 400px;
-    margin: 0 auto;
   }
 
   &--success {
     max-width: 640px;
-    margin: 0 auto;
   }
 }
 
@@ -31,7 +30,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 50px;
     font-size: 30px;
-    line-height: 0.86;
+    line-height: 40px;
   }
 
   br {
@@ -88,12 +87,31 @@
 }
 
 .popup-reviews__button {
+  width: 100%;
   padding: 18px 10px 14px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.44;
+  color: $light-text;
+  background-color: $button-background;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 1.24;
+  }
+
+  &:hover {
+    background-color: $button-background--hover;
+  }
+
+  &:active {
+    color: $button-text--active;
+    background-color: $button-background--active;
+  }
+
+  &:disabled {
+    background-color: $button-background--disabled;
+    cursor: default;
   }
 }

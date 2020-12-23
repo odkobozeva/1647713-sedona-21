@@ -3,9 +3,11 @@
   display: block;
   min-height: 280px;
   padding-bottom: 56%;
+  background-color: $catalog-image-background;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 82.4%;
+    min-height: 267px;
+    padding-bottom: 80%;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +42,7 @@
     padding: 17px 20px;
     background-color: $card-gallery-background-light;
     grid-template-columns: auto minmax(65px, max-content);
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,16 +58,12 @@
   @media (max-width: $mobile-width-only) {
     margin-bottom: 10px;
   }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
-  }
 }
 
 .card-gallery__title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 23px;
   text-transform: uppercase;
 
   @media (min-width: $desktop-width) {
@@ -74,7 +73,7 @@
 
 .card-gallery__autor {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 23px;
   color: $secondary-text;
 
   @media (min-width: $desktop-width) {
@@ -85,7 +84,7 @@
 .card-gallery__button {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 14px;
   text-align: left;
   cursor: pointer;
 
@@ -100,7 +99,7 @@
 
 .card-gallery__icon {
   margin-right: 10px;
-  fill: $icon-like-light;
+  fill: $icon-dark-opacity;
 
   @media (min-width: $tablet-width) {
     margin-right: 6px;

@@ -24,11 +24,15 @@ $button-background--hover: #669ec0;
 $button-background--active: #5496bd;
 $button-background--disabled: #e5e5e5;
 
+$image-background: #81b3d2;
+$catalog-image-background: #fae2cb;
+
 //Colors icon
 $icon-color: #81b3d2;
 $icon-light: #ffffff;
-$icon-dark: #5c6870;
-$icon-like-light: rgba(0, 0, 0, 0.3);
+$icon-dark: #000000;
+$icon-dark-opacity: rgba(0, 0, 0, 0.3);
+$icon-controls-dark: #5c6870;
 $icon-controls--hover: #333333;
 $icon-controls--active: rgba($icon-controls--hover, 0.3);
 $icon-controls-tablet--hover: rgba($icon-light, 0.6);

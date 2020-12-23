@@ -48,8 +48,26 @@
 }
 
 .search-hotel__button {
+  display: block;
+  margin: 0 auto;
   padding: 15px 32px 16px;
   max-width: 460px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  color: $light-text;
+  background-color: $button-background;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $button-background--hover;
+  }
+
+  &:active {
+    color: $button-text--active;
+    background-color: $button-background--active;
+  }
 }
 
 .search-hotel__map {

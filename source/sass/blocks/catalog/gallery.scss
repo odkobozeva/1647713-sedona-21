@@ -20,18 +20,18 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
-    padding: 61px 20px 78px;
+    padding: 61px 100px 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 101px 20px 80px;
+    padding: 101px 100px 80px;
   }
 }
 
 .gallery__title {
   margin-bottom: 30px;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 1.4;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 37px;
@@ -46,7 +46,7 @@
 
 .gallery__description {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 23px;
 
   br {
     @media (max-width: $mobile-width-only) {
@@ -57,9 +57,10 @@
 
 .gallery__item {
   margin: 0;
+  background-color: $card-gallery-background-light;
 
   @media (max-width: $mobile-width-only) {
-    padding: 23px 20px 17px;
+    padding: 23px 20px 22px;
     border-bottom: 1px solid $decoration-line;
   }
 

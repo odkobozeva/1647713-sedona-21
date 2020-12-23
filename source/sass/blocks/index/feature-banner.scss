@@ -1,4 +1,6 @@
 .feature-banner {
+  background-color: $image-background;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -13,6 +15,7 @@
 
 .feature-banner__picture {
   height: 260px;
+  background-color: $image-background;
 
   @media (min-width: $tablet-width) {
     height: 256px;
