@@ -1,26 +1,8 @@
 .button {
-  width: 100%;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 1.24;
+  padding: 0;
   font-family: inherit;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: $button-background;
   border: none;
+  outline: none;
+  background-color: transparent;
   cursor: pointer;
-
-  &:hover {
-    background-color: $button-background--hover;
-  }
-
-  &:active {
-    color: $button-text--active;
-    background-color: $button-background--active;
-  }
-
-  &:disabled {
-    background-color: $button-background--disabled;
-    cursor: default;
-  }
 }

@@ -42,6 +42,7 @@
     padding: 17px 20px;
     background-color: $card-gallery-background-light;
     grid-template-columns: auto minmax(65px, max-content);
+    gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,10 +57,6 @@
 .card-gallery__wrapper {
   @media (max-width: $mobile-width-only) {
     margin-bottom: 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: #ffffff;
   }
 }
 

@@ -165,6 +165,9 @@
   display: grid;
   gap: 20px;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (max-width: $mobile-width-only) {
     padding: 20px 0 26px;
@@ -226,7 +229,7 @@
   align-items: center;
 
   &--username {
-    grid-template-columns: max-content auto;
+    grid-template-columns: min-content auto;
     gap: 15px;
   }
 
@@ -234,7 +237,7 @@
     gap: 8px;
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: max-content auto;
+      grid-template-columns: min-content auto;
       gap: 16px;
     }
   }
@@ -305,6 +308,27 @@
 
 .reviews__button {
   padding: 18px 10px 14px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.24;
+  color: $light-text;
+  background-color: $button-background;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $button-background--hover;
+  }
+
+  &:active {
+    color: $button-text--active;
+    background-color: $button-background--active;
+  }
+
+  &:disabled {
+    background-color: $button-background--disabled;
+    cursor: default;
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
