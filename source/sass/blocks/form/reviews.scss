@@ -184,7 +184,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr;
-      gap: 0;
+      gap: 20px 0;
       padding: 120px 0 30px;
     }
   }
@@ -217,7 +217,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      gap: 10px;
+      gap: 30px;
       grid-template-columns: repeat(4, auto);
       justify-content: space-between;
     }
@@ -242,7 +242,7 @@
     }
   }
 
-  &--contacts:not(:last-child) {
+  &--contacts:nth-child(odd) {
     @media (min-width: $desktop-width) {
       margin-right: 80px;
     }

@@ -4,9 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.min.css" rel="stylesheet">
-  <link rel="icon" href="img/favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
   <title>HTML Academy: Седона</title>
+  <meta name="description" content="Фотогалерея Седоны и ее окрестностей">
 </head>
 
 <body class="page__body">
@@ -88,7 +91,7 @@
             <h3 class="card-gallery__title">Неродные просторы</h3>
             <p class="card-gallery__autor">Автор фото: Борис</p>
           </div>
-          <button class="card-gallery__button button" type="button">
+          <button class="card-gallery__button button" aria-label="Поставить like под фото №1" type="button">
             <svg class="card-gallery__icon" width="23" height="21">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
@@ -119,7 +122,7 @@
             <h3 class="card-gallery__title">Местная растительность</h3>
             <p class="card-gallery__autor">Автор фото: Сергей</p>
           </div>
-          <button class="card-gallery__button button" type="button">
+          <button class="card-gallery__button button" aria-label="Поставить like под фото №2" type="button">
             <svg class="card-gallery__icon" width="23" height="21">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
@@ -150,8 +153,7 @@
             <h3 class="card-gallery__title">Дорога на север</h3>
             <p class="card-gallery__autor">Автор фото: Петр</p>
           </div>
-
-          <button class="card-gallery__button button" type="button">
+          <button class="card-gallery__button button" aria-label="Поставить like под фото №3" type="button">
             <svg class="card-gallery__icon" width="23" height="21">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
@@ -182,7 +184,7 @@
             <h3 class="card-gallery__title">Мост Дьявола</h3>
             <p class="card-gallery__autor">Автор фото: Антон</p>
           </div>
-          <button class="card-gallery__button button" type="button">
+          <button class="card-gallery__button button" aria-label="Поставить like под фото №4" type="button">
             <svg class="card-gallery__icon" width="23" height="21">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
@@ -214,24 +216,24 @@
             <source media="(min-width: 768px)"
               srcset="img/catalog/video-tablet.jpg 1x, img/catalog/video-tablet@2x.jpg 2x">
             <img class="video__preview-image" src="img/catalog/video-mobile.jpg"
-              srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Video poster" width="280" height="280">
+              srcset="img/catalog/video-mobile@2x.jpg 2x" alt="Video poster" width="280" height="280" loading="lazy">
           </picture>
         </div>
 
         <div class="video__controls">
-          <button class="video__button video__button--replay button">
+          <button class="video__button video__button--replay button" aria-label="Повторить видео" type="button">
             <svg class="video__button-icon" width="16" height="20">
               <use xlink:href="img/sprite.svg#icon-replay"></use>
             </svg>
           </button>
           <div class="video__volume-bar"></div>
           <div class="video__button-group">
-            <button class="video__button video__button--subtitles button">
+            <button class="video__button video__button--subtitles button" aria-label="Включить субтитры" type="button">
               <svg class="video__button-icon" width="32" height="20">
                 <use xlink:href="img/sprite.svg#icon-subtitles"></use>
               </svg>
             </button>
-            <button class="video__button video__button--fullscreen button">
+            <button class="video__button video__button--fullscreen button" aria-label="Во весь экран" type="button">
               <svg class="video__button-icon" width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
               </svg>
@@ -246,21 +248,24 @@
     <p class="page-footer__hashtag">#visitsedona</p>
     <ul class="page-footer__socials-list socials-list">
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://twitter.com/htmlacademy_ru" target="_blank" aria-label="Седона в twitter">
+        <a class="socials-list__link" href="https://twitter.com/htmlacademy_ru" target="_blank"
+          aria-label="Седона в twitter">
           <svg class="socials-list__icon" width="18" height="15">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Седона в facebook">
+        <a class="socials-list__link" href="https://www.facebook.com/htmlacademy" target="_blank"
+          aria-label="Седона в facebook">
           <svg class="socials-list__icon" width="9" height="19">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
       <li class="socials-list__item">
-        <a class="socials-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" aria-label="Седона в youtube">
+        <a class="socials-list__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+          aria-label="Седона в youtube">
           <svg class="socials-list__icon" width="20" height="14">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>

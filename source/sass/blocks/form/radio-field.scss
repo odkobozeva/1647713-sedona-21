@@ -26,6 +26,10 @@
   &:checked + .radio-field__label:active::after {
     background-color: $input--disabled;
   }
+
+  &:focus + .radio-field__label {
+    outline: 4px solid $input--active;
+  }
 }
 
 .radio-field__label {

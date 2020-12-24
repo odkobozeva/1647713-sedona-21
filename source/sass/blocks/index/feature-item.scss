@@ -53,7 +53,7 @@
 }
 
 .feature-item__title {
-  margin-bottom: 12px;
+  margin: 0 0 12px;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.4;
@@ -110,7 +110,7 @@
 }
 
 .feature-item__description {
-  margin-top: 17px;
+  margin: 17px 0 0;
   line-height: 1.5;
   color: $secondary-text;
   text-transform: uppercase;

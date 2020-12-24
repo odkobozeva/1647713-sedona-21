@@ -27,6 +27,10 @@
   &:checked + .checkbox-field__label:active::after {
     border-color: $input--disabled;
   }
+
+  &:focus + .checkbox-field__label {
+    outline: 4px solid $input--active;
+  }
 }
 
 .checkbox-field__label {
