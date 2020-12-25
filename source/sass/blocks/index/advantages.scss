@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 50px 0;
     padding: 54px 0 60px;
   }
 
@@ -53,6 +53,7 @@
 }
 
 .advantages__title {
+  margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.44;
@@ -64,6 +65,7 @@
 }
 
 .advantages__description {
+  margin: 0;
   grid-column: 2;
   line-height: 1.5;
   color: $secondary-text;
