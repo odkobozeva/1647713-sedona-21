@@ -43,39 +43,30 @@
 
 .popup-reviews__description {
   margin: 0;
+  padding: 30px 41px 24px;
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
   text-transform: uppercase;
 
-  &--success {
-    padding: 29px 41px 40px;
-
-    @media (min-width: $tablet-width) {
-      padding: 33px 41px 47px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 36px 41px 44px;
-    }
-  }
-
-  &--error {
-    padding: 29px 41px 24px;
-
-    @media (min-width: $tablet-width) {
-      padding: 21px 37px 37px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 26px 41px 37px;
   }
 }
 
 .popup-reviews__button-wrapper {
   &--success {
+    margin-top: 17px;
     padding: 20px;
     background-color: $page-background;
 
     @media (min-width: $tablet-width) {
+      margin-top: 10px;
       padding: 44px 92px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 6px;
     }
   }
 
