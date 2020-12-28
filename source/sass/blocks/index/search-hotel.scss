@@ -59,6 +59,7 @@
   color: $light-text;
   background-color: $button-background;
   text-transform: uppercase;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $button-background--hover;

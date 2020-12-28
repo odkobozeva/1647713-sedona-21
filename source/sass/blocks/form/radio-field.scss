@@ -30,6 +30,14 @@
   &:focus + .radio-field__label {
     outline: 4px solid $input--active;
   }
+
+  &:disabled + .radio-field__label {
+    cursor: default;
+  }
+
+  &:disabled + .radio-field__label::before {
+    background-color: $input--active;
+  }
 }
 
 .radio-field__label {

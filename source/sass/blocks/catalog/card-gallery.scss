@@ -4,6 +4,7 @@
   min-height: 280px;
   padding-bottom: 56%;
   background-color: $catalog-image-background;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-height: 267px;
