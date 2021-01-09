@@ -29,10 +29,6 @@
     border-color: $input--disabled;
   }
 
-  &:focus + .checkbox-field__label {
-    outline: 4px solid $input--active;
-  }
-
   &:disabled + .checkbox-field__label {
     cursor: default;
   }

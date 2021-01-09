@@ -1,12 +1,15 @@
 .video-presentation {
+  padding-bottom: 53px;
+
   @media (min-width: $tablet-width) {
-    position: relative;
     width: calc(100% - 120px);
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: calc(100% - 400px);
+    padding-bottom: 86px;
   }
 }
 
@@ -47,13 +50,5 @@
 
 
 .video-presentation__item {
-  margin-bottom: 53px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 86px;
-  }
+  position: relative;
 }

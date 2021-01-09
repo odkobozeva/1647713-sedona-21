@@ -27,10 +27,6 @@
     background-color: $input--disabled;
   }
 
-  &:focus + .radio-field__label {
-    outline: 4px solid $input--active;
-  }
-
   &:disabled + .radio-field__label {
     cursor: default;
   }
