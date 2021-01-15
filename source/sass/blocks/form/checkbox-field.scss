@@ -36,6 +36,10 @@
   &:disabled + .checkbox-field__label::before {
     background-color: $input--active;
   }
+
+  &:focus + .checkbox-field__label {
+    outline: 1px auto;
+  }
 }
 
 .checkbox-field__label {
